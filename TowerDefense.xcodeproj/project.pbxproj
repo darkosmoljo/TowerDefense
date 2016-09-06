@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E70497FC1D7E2144000F60E1 /* Hydra.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E70497FB1D7E2144000F60E1 /* Hydra.atlasc */; };
+		E70497FE1D7E219F000F60E1 /* Hydra.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70497FD1D7E219F000F60E1 /* Hydra.swift */; };
+		E70498001D7E24C8000F60E1 /* HydrasLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70497FF1D7E24C8000F60E1 /* HydrasLevel.swift */; };
+		E70498021D7E2500000F60E1 /* HydraEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70498011D7E2500000F60E1 /* HydraEnemy.swift */; };
+		E70498041D7F683C000F60E1 /* MixedLevel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70498031D7F683C000F60E1 /* MixedLevel1.swift */; };
+		E70498061D7F7F3D000F60E1 /* UIOutlinedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70498051D7F7F3D000F60E1 /* UIOutlinedLabel.swift */; };
+		E70773E91CE7856600C9DC93 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70773E81CE7856600C9DC93 /* Board.swift */; };
+		E70773EB1CE9218F00C9DC93 /* TileListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70773EA1CE9218F00C9DC93 /* TileListener.swift */; };
+		E71F5B701CF101E7004CE2F2 /* ZealotEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F5B6F1CF101E7004CE2F2 /* ZealotEnemy.swift */; };
+		E71F5B731CF120A3004CE2F2 /* ZealotsLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F5B721CF120A3004CE2F2 /* ZealotsLevel.swift */; };
+		E73F799D1CE9DA98008CD865 /* UIListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F799C1CE9DA98008CD865 /* UIListener.swift */; };
+		E73F799F1CE9DAE9008CD865 /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F799E1CE9DAE9008CD865 /* Tower.swift */; };
+		E73F79A11CE9E8C6008CD865 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F79A01CE9E8C6008CD865 /* Scene.swift */; };
+		E73F79A31CE9FC47008CD865 /* ArchonTower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F79A21CE9FC47008CD865 /* ArchonTower.swift */; };
+		E73F79A61CEA0327008CD865 /* SpriteListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F79A51CEA0327008CD865 /* SpriteListener.swift */; };
+		E73F79A81CEA255F008CD865 /* Zealot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F79A71CEA255F008CD865 /* Zealot.swift */; };
+		E73F79AB1CEA4102008CD865 /* Archon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F79AA1CEA4102008CD865 /* Archon.swift */; };
+		E7471F5B1CE67DCD004B22AC /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7471F5A1CE67DCD004B22AC /* Tile.swift */; };
+		E774C60C1CEA5F1B00FF3892 /* Archon.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E774C60A1CEA5F1B00FF3892 /* Archon.atlasc */; };
+		E774C60D1CEA5F1B00FF3892 /* Zealot.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E774C60B1CEA5F1B00FF3892 /* Zealot.atlasc */; };
+		E7B448131CF5FECA00FA4342 /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448121CF5FECA00FA4342 /* EnemyNode.swift */; };
+		E7B448151CF60F6600FA4342 /* TowerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448141CF60F6600FA4342 /* TowerNode.swift */; };
+		E7B448171CF61AE500FA4342 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448161CF61AE500FA4342 /* Range.swift */; };
+		E7B448191CF61B0D00FA4342 /* RangeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448181CF61B0D00FA4342 /* RangeNode.swift */; };
+		E7B4481B1CF63D8800FA4342 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4481A1CF63D8800FA4342 /* Bullet.swift */; };
+		E7B4481D1CF63DBF00FA4342 /* BulletNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4481C1CF63DBF00FA4342 /* BulletNode.swift */; };
+		E7B448221CF6455000FA4342 /* PlasmaBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448211CF6455000FA4342 /* PlasmaBullet.swift */; };
+		E7B448241CF6462100FA4342 /* Plasma.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448231CF6462100FA4342 /* Plasma.swift */; };
+		E7B448261CF657FD00FA4342 /* Plasma.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7B448251CF657FD00FA4342 /* Plasma.atlasc */; };
+		E7B48E7B1CF38DF300F8C5EC /* CommandCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B48E7A1CF38DF300F8C5EC /* CommandCenter.swift */; };
+		E7B48E7D1CF39AE500F8C5EC /* CollisionBitMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B48E7C1CF39AE500F8C5EC /* CollisionBitMasks.swift */; };
+		E7CCA3901C343A8400B27EC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA38F1C343A8400B27EC0 /* AppDelegate.swift */; };
+		E7CCA3921C343A8400B27EC0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7CCA3911C343A8400B27EC0 /* GameScene.sks */; };
+		E7CCA3941C343A8400B27EC0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3931C343A8400B27EC0 /* GameScene.swift */; };
+		E7CCA3961C343A8400B27EC0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3951C343A8400B27EC0 /* GameViewController.swift */; };
+		E7CCA3991C343A8400B27EC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CCA3971C343A8400B27EC0 /* Main.storyboard */; };
+		E7CCA39B1C343A8400B27EC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7CCA39A1C343A8400B27EC0 /* Assets.xcassets */; };
+		E7CCA39E1C343A8400B27EC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CCA39C1C343A8400B27EC0 /* LaunchScreen.storyboard */; };
+		E7CCA3A91C343A8400B27EC0 /* TowerDefenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3A81C343A8400B27EC0 /* TowerDefenseTests.swift */; };
+		E7CCA3B41C343A8400B27EC0 /* TowerDefenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3B31C343A8400B27EC0 /* TowerDefenseUITests.swift */; };
+		E7CCA3C21C343C5400B27EC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3C11C343C5400B27EC0 /* MainViewController.swift */; };
+		E7CCA3C61C3441D700B27EC0 /* BoardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3C51C3441D700B27EC0 /* BoardNode.swift */; };
+		E7CCA3D61C346DAD00B27EC0 /* DefaultTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3D51C346DAD00B27EC0 /* DefaultTile.swift */; };
+		E7CCA3D91C3483DB00B27EC0 /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3D81C3483DB00B27EC0 /* GameCoordinator.swift */; };
+		E7CCA3DB1C34875700B27EC0 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3DA1C34875700B27EC0 /* Level.swift */; };
+		E7CCA3DE1C34883900B27EC0 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3DD1C34883900B27EC0 /* Enemy.swift */; };
+		E7CCA3E21C348B4100B27EC0 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3E11C348B4100B27EC0 /* Map.swift */; };
+		E7CCA3E41C348C0A00B27EC0 /* GrassMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3E31C348C0A00B27EC0 /* GrassMap.swift */; };
+		E7DCE9D91CEA4C34006F4BCA /* PortraitViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCE9D81CEA4C34006F4BCA /* PortraitViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7CCA3A51C343A8400B27EC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7CCA3841C343A8400B27EC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7CCA38B1C343A8400B27EC0;
+			remoteInfo = TowerDefense;
+		};
+		E7CCA3B01C343A8400B27EC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7CCA3841C343A8400B27EC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7CCA38B1C343A8400B27EC0;
+			remoteInfo = TowerDefense;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E70497FB1D7E2144000F60E1 /* Hydra.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Hydra.atlasc; sourceTree = "<group>"; };
+		E70497FD1D7E219F000F60E1 /* Hydra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hydra.swift; sourceTree = "<group>"; };
+		E70497FF1D7E24C8000F60E1 /* HydrasLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HydrasLevel.swift; sourceTree = "<group>"; };
+		E70498011D7E2500000F60E1 /* HydraEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HydraEnemy.swift; sourceTree = "<group>"; };
+		E70498031D7F683C000F60E1 /* MixedLevel1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedLevel1.swift; sourceTree = "<group>"; };
+		E70498051D7F7F3D000F60E1 /* UIOutlinedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIOutlinedLabel.swift; sourceTree = "<group>"; };
+		E70773E81CE7856600C9DC93 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		E70773EA1CE9218F00C9DC93 /* TileListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileListener.swift; sourceTree = "<group>"; };
+		E71F5B6F1CF101E7004CE2F2 /* ZealotEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZealotEnemy.swift; sourceTree = "<group>"; };
+		E71F5B721CF120A3004CE2F2 /* ZealotsLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZealotsLevel.swift; sourceTree = "<group>"; };
+		E73F799C1CE9DA98008CD865 /* UIListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIListener.swift; sourceTree = "<group>"; };
+		E73F799E1CE9DAE9008CD865 /* Tower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
+		E73F79A01CE9E8C6008CD865 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		E73F79A21CE9FC47008CD865 /* ArchonTower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchonTower.swift; sourceTree = "<group>"; };
+		E73F79A51CEA0327008CD865 /* SpriteListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteListener.swift; sourceTree = "<group>"; };
+		E73F79A71CEA255F008CD865 /* Zealot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zealot.swift; sourceTree = "<group>"; };
+		E73F79AA1CEA4102008CD865 /* Archon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archon.swift; sourceTree = "<group>"; };
+		E7471F5A1CE67DCD004B22AC /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		E774C60A1CEA5F1B00FF3892 /* Archon.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Archon.atlasc; sourceTree = "<group>"; };
+		E774C60B1CEA5F1B00FF3892 /* Zealot.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Zealot.atlasc; sourceTree = "<group>"; };
+		E7B448121CF5FECA00FA4342 /* EnemyNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
+		E7B448141CF60F6600FA4342 /* TowerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerNode.swift; sourceTree = "<group>"; };
+		E7B448161CF61AE500FA4342 /* Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
+		E7B448181CF61B0D00FA4342 /* RangeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeNode.swift; sourceTree = "<group>"; };
+		E7B4481A1CF63D8800FA4342 /* Bullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
+		E7B4481C1CF63DBF00FA4342 /* BulletNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletNode.swift; sourceTree = "<group>"; };
+		E7B448211CF6455000FA4342 /* PlasmaBullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlasmaBullet.swift; sourceTree = "<group>"; };
+		E7B448231CF6462100FA4342 /* Plasma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plasma.swift; sourceTree = "<group>"; };
+		E7B448251CF657FD00FA4342 /* Plasma.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plasma.atlasc; sourceTree = "<group>"; };
+		E7B48E7A1CF38DF300F8C5EC /* CommandCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandCenter.swift; sourceTree = "<group>"; };
+		E7B48E7C1CF39AE500F8C5EC /* CollisionBitMasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionBitMasks.swift; sourceTree = "<group>"; };
+		E7CCA38C1C343A8400B27EC0 /* TowerDefense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TowerDefense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CCA38F1C343A8400B27EC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E7CCA3911C343A8400B27EC0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E7CCA3931C343A8400B27EC0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E7CCA3951C343A8400B27EC0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E7CCA3981C343A8400B27EC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7CCA39A1C343A8400B27EC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7CCA39D1C343A8400B27EC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E7CCA39F1C343A8400B27EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7CCA3A41C343A8400B27EC0 /* TowerDefenseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TowerDefenseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CCA3A81C343A8400B27EC0 /* TowerDefenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerDefenseTests.swift; sourceTree = "<group>"; };
+		E7CCA3AA1C343A8400B27EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7CCA3AF1C343A8400B27EC0 /* TowerDefenseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TowerDefenseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CCA3B31C343A8400B27EC0 /* TowerDefenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerDefenseUITests.swift; sourceTree = "<group>"; };
+		E7CCA3B51C343A8400B27EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7CCA3C11C343C5400B27EC0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E7CCA3C51C3441D700B27EC0 /* BoardNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardNode.swift; sourceTree = "<group>"; };
+		E7CCA3D51C346DAD00B27EC0 /* DefaultTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTile.swift; sourceTree = "<group>"; };
+		E7CCA3D81C3483DB00B27EC0 /* GameCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
+		E7CCA3DA1C34875700B27EC0 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		E7CCA3DD1C34883900B27EC0 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		E7CCA3E11C348B4100B27EC0 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		E7CCA3E31C348C0A00B27EC0 /* GrassMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrassMap.swift; sourceTree = "<group>"; };
+		E7DCE9D81CEA4C34006F4BCA /* PortraitViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7CCA3891C343A8400B27EC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CCA3A11C343A8400B27EC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CCA3AC1C343A8400B27EC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E71F5B6E1CF101CE004CE2F2 /* Enemies */ = {
+			isa = PBXGroup;
+			children = (
+				E71F5B6F1CF101E7004CE2F2 /* ZealotEnemy.swift */,
+				E70498011D7E2500000F60E1 /* HydraEnemy.swift */,
+			);
+			name = Enemies;
+			sourceTree = "<group>";
+		};
+		E71F5B711CF11FE8004CE2F2 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				E71F5B721CF120A3004CE2F2 /* ZealotsLevel.swift */,
+				E70497FF1D7E24C8000F60E1 /* HydrasLevel.swift */,
+				E70498031D7F683C000F60E1 /* MixedLevel1.swift */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		E73F799B1CE9DA00008CD865 /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				E70773EA1CE9218F00C9DC93 /* TileListener.swift */,
+				E73F799C1CE9DA98008CD865 /* UIListener.swift */,
+				E73F79A51CEA0327008CD865 /* SpriteListener.swift */,
+			);
+			name = Listeners;
+			sourceTree = "<group>";
+		};
+		E73F79A41CE9FC79008CD865 /* Towers */ = {
+			isa = PBXGroup;
+			children = (
+				E73F79A21CE9FC47008CD865 /* ArchonTower.swift */,
+				E7B48E7A1CF38DF300F8C5EC /* CommandCenter.swift */,
+			);
+			name = Towers;
+			sourceTree = "<group>";
+		};
+		E73F79A91CEA2568008CD865 /* SwiftSprites */ = {
+			isa = PBXGroup;
+			children = (
+				E70497FD1D7E219F000F60E1 /* Hydra.swift */,
+				E7B448231CF6462100FA4342 /* Plasma.swift */,
+				E73F79AA1CEA4102008CD865 /* Archon.swift */,
+				E73F79A71CEA255F008CD865 /* Zealot.swift */,
+			);
+			name = SwiftSprites;
+			sourceTree = "<group>";
+		};
+		E774C60E1CEA5F2600FF3892 /* Atlas */ = {
+			isa = PBXGroup;
+			children = (
+				E70497FB1D7E2144000F60E1 /* Hydra.atlasc */,
+				E7B448251CF657FD00FA4342 /* Plasma.atlasc */,
+				E774C60A1CEA5F1B00FF3892 /* Archon.atlasc */,
+				E774C60B1CEA5F1B00FF3892 /* Zealot.atlasc */,
+			);
+			name = Atlas;
+			sourceTree = "<group>";
+		};
+		E7B448111CF5FEA300FA4342 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				E7B448121CF5FECA00FA4342 /* EnemyNode.swift */,
+				E7B448141CF60F6600FA4342 /* TowerNode.swift */,
+				E7B448181CF61B0D00FA4342 /* RangeNode.swift */,
+				E7B4481C1CF63DBF00FA4342 /* BulletNode.swift */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		E7B4481E1CF6421A00FA4342 /* Bullets */ = {
+			isa = PBXGroup;
+			children = (
+				E7B448211CF6455000FA4342 /* PlasmaBullet.swift */,
+			);
+			name = Bullets;
+			sourceTree = "<group>";
+		};
+		E7CCA3831C343A8400B27EC0 = {
+			isa = PBXGroup;
+			children = (
+				E7CCA38E1C343A8400B27EC0 /* TowerDefense */,
+				E7CCA3A71C343A8400B27EC0 /* TowerDefenseTests */,
+				E7CCA3B21C343A8400B27EC0 /* TowerDefenseUITests */,
+				E7CCA38D1C343A8400B27EC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7CCA38D1C343A8400B27EC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7CCA38C1C343A8400B27EC0 /* TowerDefense.app */,
+				E7CCA3A41C343A8400B27EC0 /* TowerDefenseTests.xctest */,
+				E7CCA3AF1C343A8400B27EC0 /* TowerDefenseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7CCA38E1C343A8400B27EC0 /* TowerDefense */ = {
+			isa = PBXGroup;
+			children = (
+				E7B4481E1CF6421A00FA4342 /* Bullets */,
+				E7B448111CF5FEA300FA4342 /* Nodes */,
+				E71F5B711CF11FE8004CE2F2 /* Levels */,
+				E71F5B6E1CF101CE004CE2F2 /* Enemies */,
+				E774C60E1CEA5F2600FF3892 /* Atlas */,
+				E73F79A91CEA2568008CD865 /* SwiftSprites */,
+				E73F799B1CE9DA00008CD865 /* Listeners */,
+				E73F79A41CE9FC79008CD865 /* Towers */,
+				E7CCA3E01C34899900B27EC0 /* Maps */,
+				E7CCA3DF1C34892700B27EC0 /* Coordinator */,
+				E7CCA3D71C346DBD00B27EC0 /* SKSpriteNodes */,
+				E7CCA3DC1C34878600B27EC0 /* BaseClases */,
+				E7CCA3C51C3441D700B27EC0 /* BoardNode.swift */,
+				E7CCA38F1C343A8400B27EC0 /* AppDelegate.swift */,
+				E7CCA3911C343A8400B27EC0 /* GameScene.sks */,
+				E7CCA3931C343A8400B27EC0 /* GameScene.swift */,
+				E7CCA3951C343A8400B27EC0 /* GameViewController.swift */,
+				E7CCA3971C343A8400B27EC0 /* Main.storyboard */,
+				E7CCA39A1C343A8400B27EC0 /* Assets.xcassets */,
+				E7CCA39C1C343A8400B27EC0 /* LaunchScreen.storyboard */,
+				E7CCA39F1C343A8400B27EC0 /* Info.plist */,
+				E7CCA3C11C343C5400B27EC0 /* MainViewController.swift */,
+				E7DCE9D81CEA4C34006F4BCA /* PortraitViewCell.swift */,
+				E70498051D7F7F3D000F60E1 /* UIOutlinedLabel.swift */,
+			);
+			path = TowerDefense;
+			sourceTree = "<group>";
+		};
+		E7CCA3A71C343A8400B27EC0 /* TowerDefenseTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7CCA3A81C343A8400B27EC0 /* TowerDefenseTests.swift */,
+				E7CCA3AA1C343A8400B27EC0 /* Info.plist */,
+			);
+			path = TowerDefenseTests;
+			sourceTree = "<group>";
+		};
+		E7CCA3B21C343A8400B27EC0 /* TowerDefenseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E7CCA3B31C343A8400B27EC0 /* TowerDefenseUITests.swift */,
+				E7CCA3B51C343A8400B27EC0 /* Info.plist */,
+			);
+			path = TowerDefenseUITests;
+			sourceTree = "<group>";
+		};
+		E7CCA3D71C346DBD00B27EC0 /* SKSpriteNodes */ = {
+			isa = PBXGroup;
+			children = (
+				E7CCA3D51C346DAD00B27EC0 /* DefaultTile.swift */,
+			);
+			name = SKSpriteNodes;
+			sourceTree = "<group>";
+		};
+		E7CCA3DC1C34878600B27EC0 /* BaseClases */ = {
+			isa = PBXGroup;
+			children = (
+				E7471F5A1CE67DCD004B22AC /* Tile.swift */,
+				E7CCA3DA1C34875700B27EC0 /* Level.swift */,
+				E7CCA3DD1C34883900B27EC0 /* Enemy.swift */,
+				E7CCA3E11C348B4100B27EC0 /* Map.swift */,
+				E70773E81CE7856600C9DC93 /* Board.swift */,
+				E73F799E1CE9DAE9008CD865 /* Tower.swift */,
+				E73F79A01CE9E8C6008CD865 /* Scene.swift */,
+				E7B448161CF61AE500FA4342 /* Range.swift */,
+				E7B4481A1CF63D8800FA4342 /* Bullet.swift */,
+			);
+			name = BaseClases;
+			sourceTree = "<group>";
+		};
+		E7CCA3DF1C34892700B27EC0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E7CCA3D81C3483DB00B27EC0 /* GameCoordinator.swift */,
+				E7B48E7C1CF39AE500F8C5EC /* CollisionBitMasks.swift */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		E7CCA3E01C34899900B27EC0 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				E7CCA3E31C348C0A00B27EC0 /* GrassMap.swift */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7CCA38B1C343A8400B27EC0 /* TowerDefense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7CCA3B81C343A8400B27EC0 /* Build configuration list for PBXNativeTarget "TowerDefense" */;
+			buildPhases = (
+				E7CCA3881C343A8400B27EC0 /* Sources */,
+				E7CCA3891C343A8400B27EC0 /* Frameworks */,
+				E7CCA38A1C343A8400B27EC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TowerDefense;
+			productName = TowerDefense;
+			productReference = E7CCA38C1C343A8400B27EC0 /* TowerDefense.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7CCA3A31C343A8400B27EC0 /* TowerDefenseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7CCA3BB1C343A8400B27EC0 /* Build configuration list for PBXNativeTarget "TowerDefenseTests" */;
+			buildPhases = (
+				E7CCA3A01C343A8400B27EC0 /* Sources */,
+				E7CCA3A11C343A8400B27EC0 /* Frameworks */,
+				E7CCA3A21C343A8400B27EC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7CCA3A61C343A8400B27EC0 /* PBXTargetDependency */,
+			);
+			name = TowerDefenseTests;
+			productName = TowerDefenseTests;
+			productReference = E7CCA3A41C343A8400B27EC0 /* TowerDefenseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7CCA3AE1C343A8400B27EC0 /* TowerDefenseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7CCA3BE1C343A8400B27EC0 /* Build configuration list for PBXNativeTarget "TowerDefenseUITests" */;
+			buildPhases = (
+				E7CCA3AB1C343A8400B27EC0 /* Sources */,
+				E7CCA3AC1C343A8400B27EC0 /* Frameworks */,
+				E7CCA3AD1C343A8400B27EC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7CCA3B11C343A8400B27EC0 /* PBXTargetDependency */,
+			);
+			name = TowerDefenseUITests;
+			productName = TowerDefenseUITests;
+			productReference = E7CCA3AF1C343A8400B27EC0 /* TowerDefenseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7CCA3841C343A8400B27EC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Darko Smoljo";
+				TargetAttributes = {
+					E7CCA38B1C343A8400B27EC0 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WXRW3HW2AD;
+					};
+					E7CCA3A31C343A8400B27EC0 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E7CCA38B1C343A8400B27EC0;
+					};
+					E7CCA3AE1C343A8400B27EC0 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E7CCA38B1C343A8400B27EC0;
+					};
+				};
+			};
+			buildConfigurationList = E7CCA3871C343A8400B27EC0 /* Build configuration list for PBXProject "TowerDefense" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7CCA3831C343A8400B27EC0;
+			productRefGroup = E7CCA38D1C343A8400B27EC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7CCA38B1C343A8400B27EC0 /* TowerDefense */,
+				E7CCA3A31C343A8400B27EC0 /* TowerDefenseTests */,
+				E7CCA3AE1C343A8400B27EC0 /* TowerDefenseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7CCA38A1C343A8400B27EC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E774C60D1CEA5F1B00FF3892 /* Zealot.atlasc in Resources */,
+				E774C60C1CEA5F1B00FF3892 /* Archon.atlasc in Resources */,
+				E70497FC1D7E2144000F60E1 /* Hydra.atlasc in Resources */,
+				E7B448261CF657FD00FA4342 /* Plasma.atlasc in Resources */,
+				E7CCA3921C343A8400B27EC0 /* GameScene.sks in Resources */,
+				E7CCA39E1C343A8400B27EC0 /* LaunchScreen.storyboard in Resources */,
+				E7CCA39B1C343A8400B27EC0 /* Assets.xcassets in Resources */,
+				E7CCA3991C343A8400B27EC0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CCA3A21C343A8400B27EC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CCA3AD1C343A8400B27EC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7CCA3881C343A8400B27EC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7CCA3E21C348B4100B27EC0 /* Map.swift in Sources */,
+				E7B448191CF61B0D00FA4342 /* RangeNode.swift in Sources */,
+				E7471F5B1CE67DCD004B22AC /* Tile.swift in Sources */,
+				E73F79A31CE9FC47008CD865 /* ArchonTower.swift in Sources */,
+				E70498041D7F683C000F60E1 /* MixedLevel1.swift in Sources */,
+				E7CCA3941C343A8400B27EC0 /* GameScene.swift in Sources */,
+				E7B48E7B1CF38DF300F8C5EC /* CommandCenter.swift in Sources */,
+				E7CCA3E41C348C0A00B27EC0 /* GrassMap.swift in Sources */,
+				E7CCA3961C343A8400B27EC0 /* GameViewController.swift in Sources */,
+				E71F5B701CF101E7004CE2F2 /* ZealotEnemy.swift in Sources */,
+				E71F5B731CF120A3004CE2F2 /* ZealotsLevel.swift in Sources */,
+				E73F79A81CEA255F008CD865 /* Zealot.swift in Sources */,
+				E7B448221CF6455000FA4342 /* PlasmaBullet.swift in Sources */,
+				E70498021D7E2500000F60E1 /* HydraEnemy.swift in Sources */,
+				E7B48E7D1CF39AE500F8C5EC /* CollisionBitMasks.swift in Sources */,
+				E7CCA3C61C3441D700B27EC0 /* BoardNode.swift in Sources */,
+				E70773E91CE7856600C9DC93 /* Board.swift in Sources */,
+				E7DCE9D91CEA4C34006F4BCA /* PortraitViewCell.swift in Sources */,
+				E73F799F1CE9DAE9008CD865 /* Tower.swift in Sources */,
+				E7CCA3D91C3483DB00B27EC0 /* GameCoordinator.swift in Sources */,
+				E7B448131CF5FECA00FA4342 /* EnemyNode.swift in Sources */,
+				E70498061D7F7F3D000F60E1 /* UIOutlinedLabel.swift in Sources */,
+				E7B448241CF6462100FA4342 /* Plasma.swift in Sources */,
+				E7CCA3D61C346DAD00B27EC0 /* DefaultTile.swift in Sources */,
+				E70497FE1D7E219F000F60E1 /* Hydra.swift in Sources */,
+				E7B448171CF61AE500FA4342 /* Range.swift in Sources */,
+				E73F79A11CE9E8C6008CD865 /* Scene.swift in Sources */,
+				E7CCA3DE1C34883900B27EC0 /* Enemy.swift in Sources */,
+				E7CCA3901C343A8400B27EC0 /* AppDelegate.swift in Sources */,
+				E7CCA3DB1C34875700B27EC0 /* Level.swift in Sources */,
+				E73F799D1CE9DA98008CD865 /* UIListener.swift in Sources */,
+				E7B4481D1CF63DBF00FA4342 /* BulletNode.swift in Sources */,
+				E7CCA3C21C343C5400B27EC0 /* MainViewController.swift in Sources */,
+				E70773EB1CE9218F00C9DC93 /* TileListener.swift in Sources */,
+				E70498001D7E24C8000F60E1 /* HydrasLevel.swift in Sources */,
+				E7B448151CF60F6600FA4342 /* TowerNode.swift in Sources */,
+				E73F79AB1CEA4102008CD865 /* Archon.swift in Sources */,
+				E73F79A61CEA0327008CD865 /* SpriteListener.swift in Sources */,
+				E7B4481B1CF63D8800FA4342 /* Bullet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CCA3A01C343A8400B27EC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7CCA3A91C343A8400B27EC0 /* TowerDefenseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CCA3AB1C343A8400B27EC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7CCA3B41C343A8400B27EC0 /* TowerDefenseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7CCA3A61C343A8400B27EC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7CCA38B1C343A8400B27EC0 /* TowerDefense */;
+			targetProxy = E7CCA3A51C343A8400B27EC0 /* PBXContainerItemProxy */;
+		};
+		E7CCA3B11C343A8400B27EC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7CCA38B1C343A8400B27EC0 /* TowerDefense */;
+			targetProxy = E7CCA3B01C343A8400B27EC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7CCA3971C343A8400B27EC0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7CCA3981C343A8400B27EC0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E7CCA39C1C343A8400B27EC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7CCA39D1C343A8400B27EC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7CCA3B61C343A8400B27EC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E7CCA3B71C343A8400B27EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7CCA3B91C343A8400B27EC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TowerDefense/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E7CCA3BA1C343A8400B27EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TowerDefense/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E7CCA3BC1C343A8400B27EC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TowerDefenseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefenseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TowerDefense.app/TowerDefense";
+			};
+			name = Debug;
+		};
+		E7CCA3BD1C343A8400B27EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TowerDefenseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefenseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TowerDefense.app/TowerDefense";
+			};
+			name = Release;
+		};
+		E7CCA3BF1C343A8400B27EC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TowerDefenseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefenseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TowerDefense;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E7CCA3C01C343A8400B27EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TowerDefenseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefenseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TowerDefense;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7CCA3871C343A8400B27EC0 /* Build configuration list for PBXProject "TowerDefense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CCA3B61C343A8400B27EC0 /* Debug */,
+				E7CCA3B71C343A8400B27EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7CCA3B81C343A8400B27EC0 /* Build configuration list for PBXNativeTarget "TowerDefense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CCA3B91C343A8400B27EC0 /* Debug */,
+				E7CCA3BA1C343A8400B27EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7CCA3BB1C343A8400B27EC0 /* Build configuration list for PBXNativeTarget "TowerDefenseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CCA3BC1C343A8400B27EC0 /* Debug */,
+				E7CCA3BD1C343A8400B27EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7CCA3BE1C343A8400B27EC0 /* Build configuration list for PBXNativeTarget "TowerDefenseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CCA3BF1C343A8400B27EC0 /* Debug */,
+				E7CCA3C01C343A8400B27EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7CCA3841C343A8400B27EC0 /* Project object */;
+}
