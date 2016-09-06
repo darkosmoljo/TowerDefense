@@ -54,7 +54,7 @@ final class GameCoordinator {
         
         weak var thizz: GameCoordinator! = self
 
-        delay(2, closure: {
+        delay(10, closure: {
             thizz?.startFirstLevel()
         })
     }
