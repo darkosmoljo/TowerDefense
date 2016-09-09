@@ -326,6 +326,7 @@
             <key type="filename">hydra.atlas/hydra_walk_down4.png</key>
             <key type="filename">hydra.atlas/hydra_walk_down5.png</key>
             <key type="filename">hydra.atlas/hydra_walk_down6.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_down7.png</key>
             <key type="filename">hydra.atlas/hydra_walk_side1.png</key>
             <key type="filename">hydra.atlas/hydra_walk_side2.png</key>
             <key type="filename">hydra.atlas/hydra_walk_side3.png</key>
