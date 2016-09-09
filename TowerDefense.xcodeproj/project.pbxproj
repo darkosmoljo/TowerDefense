@@ -27,6 +27,9 @@
 		E7471F5B1CE67DCD004B22AC /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7471F5A1CE67DCD004B22AC /* Tile.swift */; };
 		E774C60C1CEA5F1B00FF3892 /* Archon.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E774C60A1CEA5F1B00FF3892 /* Archon.atlasc */; };
 		E774C60D1CEA5F1B00FF3892 /* Zealot.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E774C60B1CEA5F1B00FF3892 /* Zealot.atlasc */; };
+		E7960D221D81AD280018531B /* Storm.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7960D211D81AD280018531B /* Storm.atlasc */; };
+		E7960D241D81AD380018531B /* Storm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7960D231D81AD380018531B /* Storm.swift */; };
+		E7960D261D81AD460018531B /* StormBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7960D251D81AD460018531B /* StormBullet.swift */; };
 		E7B448131CF5FECA00FA4342 /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448121CF5FECA00FA4342 /* EnemyNode.swift */; };
 		E7B448151CF60F6600FA4342 /* TowerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448141CF60F6600FA4342 /* TowerNode.swift */; };
 		E7B448171CF61AE500FA4342 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B448161CF61AE500FA4342 /* Range.swift */; };
@@ -96,6 +99,9 @@
 		E7471F5A1CE67DCD004B22AC /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		E774C60A1CEA5F1B00FF3892 /* Archon.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Archon.atlasc; sourceTree = "<group>"; };
 		E774C60B1CEA5F1B00FF3892 /* Zealot.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Zealot.atlasc; sourceTree = "<group>"; };
+		E7960D211D81AD280018531B /* Storm.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Storm.atlasc; sourceTree = "<group>"; };
+		E7960D231D81AD380018531B /* Storm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storm.swift; sourceTree = "<group>"; };
+		E7960D251D81AD460018531B /* StormBullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StormBullet.swift; sourceTree = "<group>"; };
 		E7B448121CF5FECA00FA4342 /* EnemyNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
 		E7B448141CF60F6600FA4342 /* TowerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerNode.swift; sourceTree = "<group>"; };
 		E7B448161CF61AE500FA4342 /* Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
@@ -199,6 +205,7 @@
 		E73F79A91CEA2568008CD865 /* SwiftSprites */ = {
 			isa = PBXGroup;
 			children = (
+				E7960D231D81AD380018531B /* Storm.swift */,
 				E70497FD1D7E219F000F60E1 /* Hydra.swift */,
 				E7B448231CF6462100FA4342 /* Plasma.swift */,
 				E73F79AA1CEA4102008CD865 /* Archon.swift */,
@@ -210,6 +217,7 @@
 		E774C60E1CEA5F2600FF3892 /* Atlas */ = {
 			isa = PBXGroup;
 			children = (
+				E7960D211D81AD280018531B /* Storm.atlasc */,
 				E70497FB1D7E2144000F60E1 /* Hydra.atlasc */,
 				E7B448251CF657FD00FA4342 /* Plasma.atlasc */,
 				E774C60A1CEA5F1B00FF3892 /* Archon.atlasc */,
@@ -233,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				E7B448211CF6455000FA4342 /* PlasmaBullet.swift */,
+				E7960D251D81AD460018531B /* StormBullet.swift */,
 			);
 			name = Bullets;
 			sourceTree = "<group>";
@@ -458,6 +467,7 @@
 				E7B448261CF657FD00FA4342 /* Plasma.atlasc in Resources */,
 				E7CCA3921C343A8400B27EC0 /* GameScene.sks in Resources */,
 				E7CCA39E1C343A8400B27EC0 /* LaunchScreen.storyboard in Resources */,
+				E7960D221D81AD280018531B /* Storm.atlasc in Resources */,
 				E7CCA39B1C343A8400B27EC0 /* Assets.xcassets in Resources */,
 				E7CCA3991C343A8400B27EC0 /* Main.storyboard in Resources */,
 			);
@@ -487,6 +497,7 @@
 				E7CCA3E21C348B4100B27EC0 /* Map.swift in Sources */,
 				E7B448191CF61B0D00FA4342 /* RangeNode.swift in Sources */,
 				E7471F5B1CE67DCD004B22AC /* Tile.swift in Sources */,
+				E7960D241D81AD380018531B /* Storm.swift in Sources */,
 				E73F79A31CE9FC47008CD865 /* ArchonTower.swift in Sources */,
 				E70498041D7F683C000F60E1 /* MixedLevel1.swift in Sources */,
 				E7CCA3941C343A8400B27EC0 /* GameScene.swift in Sources */,
@@ -509,6 +520,7 @@
 				E7B448241CF6462100FA4342 /* Plasma.swift in Sources */,
 				E7CCA3D61C346DAD00B27EC0 /* DefaultTile.swift in Sources */,
 				E70497FE1D7E219F000F60E1 /* Hydra.swift in Sources */,
+				E7960D261D81AD460018531B /* StormBullet.swift in Sources */,
 				E7B448171CF61AE500FA4342 /* Range.swift in Sources */,
 				E73F79A11CE9E8C6008CD865 /* Scene.swift in Sources */,
 				E7CCA3DE1C34883900B27EC0 /* Enemy.swift in Sources */,

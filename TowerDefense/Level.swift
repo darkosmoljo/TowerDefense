@@ -12,5 +12,6 @@ protocol Level {
     
     func getEnemies() -> [Enemy]
     func getId() -> String
+    func getDelay() -> Double
     
 }

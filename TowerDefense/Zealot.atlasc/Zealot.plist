@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 4.2.3 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:65a43e8d680bbc8ce8e7c53987c92cd3:f398617e7845ef9ba2393f1f73768b01:ffa35660ed3fb573846574c2a0036c70$</string>
+            <string>$TexturePacker:SmartUpdate:076b054d38b62d71a61f9693c4fa8861:f398617e7845ef9ba2393f1f73768b01:ffa35660ed3fb573846574c2a0036c70$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -26,7 +26,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_dead_3.png</string>
+                        <string>zealot_death3.png</string>
                         <key>spriteOffset</key>
                         <string>{1,0}</string>
                         <key>spriteSourceSize</key>
@@ -42,7 +42,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_dead_2.png</string>
+                        <string>zealot_death2.png</string>
                         <key>spriteOffset</key>
                         <string>{1,0}</string>
                         <key>spriteSourceSize</key>
@@ -58,7 +58,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_dead_6.png</string>
+                        <string>zealot_death6.png</string>
                         <key>spriteOffset</key>
                         <string>{3,5}</string>
                         <key>spriteSourceSize</key>
@@ -74,7 +74,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_dead_4.png</string>
+                        <string>zealot_death4.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
@@ -90,7 +90,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_dead_5.png</string>
+                        <string>zealot_death5.png</string>
                         <key>spriteOffset</key>
                         <string>{2,2}</string>
                         <key>spriteSourceSize</key>
@@ -106,7 +106,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_dead_1.png</string>
+                        <string>zealot_death1.png</string>
                         <key>spriteOffset</key>
                         <string>{4,0}</string>
                         <key>spriteSourceSize</key>
@@ -122,7 +122,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_attack_side_5.png</string>
+                        <string>zealot_attack_side5.png</string>
                         <key>spriteOffset</key>
                         <string>{0,2}</string>
                         <key>spriteSourceSize</key>
@@ -138,7 +138,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_down_5.png</string>
+                        <string>zealot_walk_down5.png</string>
                         <key>spriteOffset</key>
                         <string>{5,4}</string>
                         <key>spriteSourceSize</key>
@@ -154,7 +154,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_attack_side_3.png</string>
+                        <string>zealot_attack_side3.png</string>
                         <key>spriteOffset</key>
                         <string>{0,2}</string>
                         <key>spriteSourceSize</key>
@@ -170,7 +170,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_side_8.png</string>
+                        <string>zealot_walk_side8.png</string>
                         <key>spriteOffset</key>
                         <string>{4,3}</string>
                         <key>spriteSourceSize</key>
@@ -186,7 +186,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_attack_side_2.png</string>
+                        <string>zealot_attack_side2.png</string>
                         <key>spriteOffset</key>
                         <string>{1,3}</string>
                         <key>spriteSourceSize</key>
@@ -202,7 +202,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_down_6.png</string>
+                        <string>zealot_walk_down6.png</string>
                         <key>spriteOffset</key>
                         <string>{4,3}</string>
                         <key>spriteSourceSize</key>
@@ -218,7 +218,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_attack_side_4.png</string>
+                        <string>zealot_attack_side4.png</string>
                         <key>spriteOffset</key>
                         <string>{1,2}</string>
                         <key>spriteSourceSize</key>
@@ -234,7 +234,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_side_5.png</string>
+                        <string>zealot_walk_side5.png</string>
                         <key>spriteOffset</key>
                         <string>{3,3}</string>
                         <key>spriteSourceSize</key>
@@ -250,7 +250,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_attack_side_1.png</string>
+                        <string>zealot_attack_side1.png</string>
                         <key>spriteOffset</key>
                         <string>{2,3}</string>
                         <key>spriteSourceSize</key>
@@ -266,7 +266,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up_8.png</string>
+                        <string>zealot_walk_up8.png</string>
                         <key>spriteOffset</key>
                         <string>{2,6}</string>
                         <key>spriteSourceSize</key>
@@ -282,7 +282,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_down_7.png</string>
+                        <string>zealot_walk_down7.png</string>
                         <key>spriteOffset</key>
                         <string>{1,3}</string>
                         <key>spriteSourceSize</key>
@@ -298,7 +298,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_side_1.png</string>
+                        <string>zealot_walk_side1.png</string>
                         <key>spriteOffset</key>
                         <string>{4,4}</string>
                         <key>spriteSourceSize</key>
@@ -314,7 +314,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_down_2.png</string>
+                        <string>zealot_walk_down2.png</string>
                         <key>spriteOffset</key>
                         <string>{4,4}</string>
                         <key>spriteSourceSize</key>
@@ -330,7 +330,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up_2.png</string>
+                        <string>zealot_walk_up2.png</string>
                         <key>spriteOffset</key>
                         <string>{3,5}</string>
                         <key>spriteSourceSize</key>
@@ -346,7 +346,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_down_1.png</string>
+                        <string>zealot_walk_down1.png</string>
                         <key>spriteOffset</key>
                         <string>{4,4}</string>
                         <key>spriteSourceSize</key>
@@ -362,7 +362,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up_4.png</string>
+                        <string>zealot_walk_up4.png</string>
                         <key>spriteOffset</key>
                         <string>{3,5}</string>
                         <key>spriteSourceSize</key>
@@ -378,7 +378,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_side_7.png</string>
+                        <string>zealot_walk_side7.png</string>
                         <key>spriteOffset</key>
                         <string>{3,3}</string>
                         <key>spriteSourceSize</key>
@@ -394,7 +394,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_down_3.png</string>
+                        <string>zealot_walk_down3.png</string>
                         <key>spriteOffset</key>
                         <string>{0,5}</string>
                         <key>spriteSourceSize</key>
@@ -410,7 +410,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_down_8.png</string>
+                        <string>zealot_walk_down8.png</string>
                         <key>spriteOffset</key>
                         <string>{3,6}</string>
                         <key>spriteSourceSize</key>
@@ -426,7 +426,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_side_2.png</string>
+                        <string>zealot_walk_side2.png</string>
                         <key>spriteOffset</key>
                         <string>{4,4}</string>
                         <key>spriteSourceSize</key>
@@ -442,7 +442,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up_6.png</string>
+                        <string>zealot_walk_up6.png</string>
                         <key>spriteOffset</key>
                         <string>{3,6}</string>
                         <key>spriteSourceSize</key>
@@ -458,7 +458,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_side_4.png</string>
+                        <string>zealot_walk_side4.png</string>
                         <key>spriteOffset</key>
                         <string>{4,3}</string>
                         <key>spriteSourceSize</key>
@@ -474,7 +474,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_side_6.png</string>
+                        <string>zealot_walk_side6.png</string>
                         <key>spriteOffset</key>
                         <string>{3,4}</string>
                         <key>spriteSourceSize</key>
@@ -490,7 +490,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up_3.png</string>
+                        <string>zealot_walk_up3.png</string>
                         <key>spriteOffset</key>
                         <string>{1,6}</string>
                         <key>spriteSourceSize</key>
@@ -506,7 +506,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up_7.png</string>
+                        <string>zealot_walk_up7.png</string>
                         <key>spriteOffset</key>
                         <string>{2,6}</string>
                         <key>spriteSourceSize</key>
@@ -522,7 +522,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_down_4.png</string>
+                        <string>zealot_walk_down4.png</string>
                         <key>spriteOffset</key>
                         <string>{3,5}</string>
                         <key>spriteSourceSize</key>
@@ -538,7 +538,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up_5.png</string>
+                        <string>zealot_walk_up5.png</string>
                         <key>spriteOffset</key>
                         <string>{5,6}</string>
                         <key>spriteSourceSize</key>
@@ -554,7 +554,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_side_3.png</string>
+                        <string>zealot_walk_side3.png</string>
                         <key>spriteOffset</key>
                         <string>{2,5}</string>
                         <key>spriteSourceSize</key>
@@ -570,7 +570,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up_1.png</string>
+                        <string>zealot_walk_up1.png</string>
                         <key>spriteOffset</key>
                         <string>{5,6}</string>
                         <key>spriteSourceSize</key>

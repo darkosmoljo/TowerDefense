@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.2.3</string>
         <key>fileName</key>
-        <string>/Users/darkosmoljo/Documents/Fax/iOS/TowerDefense/zealot_sprites.tps</string>
+        <string>/Users/darkosmoljo/Documents/Git/TowerDefense/zealot_sprites.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -312,41 +312,41 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">zealot.atlas/zealot_attack_side_1.png</key>
-            <key type="filename">zealot.atlas/zealot_attack_side_2.png</key>
-            <key type="filename">zealot.atlas/zealot_attack_side_3.png</key>
-            <key type="filename">zealot.atlas/zealot_attack_side_4.png</key>
-            <key type="filename">zealot.atlas/zealot_attack_side_5.png</key>
-            <key type="filename">zealot.atlas/zealot_dead_1.png</key>
-            <key type="filename">zealot.atlas/zealot_dead_2.png</key>
-            <key type="filename">zealot.atlas/zealot_dead_3.png</key>
-            <key type="filename">zealot.atlas/zealot_dead_4.png</key>
-            <key type="filename">zealot.atlas/zealot_dead_5.png</key>
-            <key type="filename">zealot.atlas/zealot_dead_6.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_down_1.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_down_2.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_down_3.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_down_4.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_down_5.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_down_6.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_down_7.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_down_8.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_side_1.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_side_2.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_side_3.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_side_4.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_side_5.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_side_6.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_side_7.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_side_8.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_up_1.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_up_2.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_up_3.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_up_4.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_up_5.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_up_6.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_up_7.png</key>
-            <key type="filename">zealot.atlas/zealot_walk_up_8.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_side1.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_side2.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_side3.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_side4.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_side5.png</key>
+            <key type="filename">zealot.atlas/zealot_death1.png</key>
+            <key type="filename">zealot.atlas/zealot_death2.png</key>
+            <key type="filename">zealot.atlas/zealot_death3.png</key>
+            <key type="filename">zealot.atlas/zealot_death4.png</key>
+            <key type="filename">zealot.atlas/zealot_death5.png</key>
+            <key type="filename">zealot.atlas/zealot_death6.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_down1.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_down2.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_down3.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_down4.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_down5.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_down6.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_down7.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_down8.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_side1.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_side2.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_side3.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_side4.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_side5.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_side6.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_side7.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_side8.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_up1.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_up2.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_up3.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_up4.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_up5.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_up6.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_up7.png</key>
+            <key type="filename">zealot.atlas/zealot_walk_up8.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>

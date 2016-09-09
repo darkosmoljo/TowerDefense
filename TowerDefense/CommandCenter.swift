@@ -44,8 +44,8 @@ class CommandCenter: SKSpriteNode {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func enemyAttack() {
-        self.healt = self.healt - 1
+    func enemyAttack(damage: Int) {
+        self.healt = self.healt - damage
         
         self.listener?.ccHealthChange(self.healt)
     }

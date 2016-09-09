@@ -14,11 +14,13 @@ class BulletNode: SKSpriteNode, Bullet {
     var target: Enemy!
     var tower: Tower!
     
+    var isExploading: Bool = false
+    
     var explodeAnim: SKAction!
     var animation: SKAction!
     
     func getSpeed() -> Float {
-        return 300.0
+        return 0
     }
     
     func getTarget() -> Enemy? {
@@ -48,6 +50,10 @@ class BulletNode: SKSpriteNode, Bullet {
         
     }
     
+    func isAOE() -> Bool {
+        return false
+    }
+    
     func getNode() -> SKSpriteNode {
         return self
     }
@@ -61,39 +67,38 @@ class BulletNode: SKSpriteNode, Bullet {
     }
     
     func explode() {
+        isExploading = true
         clearInstance()
     }
     
     func clearInstance() {
-        self.tower.setBullet(nil)
+        self.tower?.setBullet(nil)
         self.tower = nil
         self.target = nil
         self.removeAllActions()
         self.removeFromParent()
     }
     
-    func recalibrate() -> Bool {
-        if (target != nil && target.getHealth() > 0) {
+    func recalibrate() {
+        
+        if (getSpeed() > 0 && target != nil && target.getHealth() > 0) {
             
-            let targetNode: SKNode = target.getNode()
-            
-            let x: Float = Float(position.x - targetNode.position.x)
-            let y: Float = Float(targetNode.position.y - position.y)
-            let direction: Float = atan2f(x, y) + Float(M_PI_2)
-            
-            let velocityX: CGFloat = CGFloat(getSpeed() * cos(direction))
-            let velocityY: CGFloat = CGFloat(getSpeed() * sin(direction))
-            
-            let newVelocity = CGVectorMake(velocityX, velocityY)
-            
-            physicsBody?.velocity = newVelocity
-            
-            return true
+            if let targetNode: SKNode = target.getNode() {
+                
+                let x: Float = Float(position.x - targetNode.position.x)
+                let y: Float = Float(targetNode.position.y - position.y)
+                let direction: Float = atan2f(x, y) + Float(M_PI_2)
+                
+                let velocityX: CGFloat = CGFloat(getSpeed() * cos(direction))
+                let velocityY: CGFloat = CGFloat(getSpeed() * sin(direction))
+                
+                let newVelocity = CGVectorMake(velocityX, velocityY)
+                
+                physicsBody?.velocity = newVelocity
+            }
         } else {
             explode()
         }
-        
-        return false
     }
     
     func fire() {

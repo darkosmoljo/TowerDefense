@@ -18,7 +18,7 @@ public class GrassMap : Map {
     
     init() {
         
-        levels = [ZealotsLevel(), HydrasLevel()]
+        levels = [ZealotsLevel(), HydrasLevel(), MixedLevel1()]
         
         towers = [ArchonTower(), ArchonTower(), ArchonTower(), ArchonTower(), ArchonTower(), ArchonTower(), ArchonTower()]
         

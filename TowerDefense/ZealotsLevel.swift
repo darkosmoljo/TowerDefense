@@ -17,4 +17,8 @@ class ZealotsLevel : Level {
     func getId() -> String{
         return "ZealotsLevel"
     }
+    
+    func getDelay() -> Double {
+        return 0.4
+    }
 }

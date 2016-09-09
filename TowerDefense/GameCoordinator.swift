@@ -82,12 +82,12 @@ final class GameCoordinator {
     }
     
     private func startLevel(level: Level) {
-        putEnemiesOnBoard(level.getEnemies())
+        putEnemiesOnBoard(level.getEnemies(), delaySeconds: level.getDelay())
         
         levels?.removeFirst()
     }
     
-    private func putEnemiesOnBoard(enemies: [Enemy]) {
+    private func putEnemiesOnBoard(enemies: [Enemy], delaySeconds: Double) {
         
         if (enemies.count > 0) {
             board.putEnemy(enemies[0])
@@ -98,8 +98,8 @@ final class GameCoordinator {
             
             weak var thizz: GameCoordinator! = self
             
-            delay(0.4, closure: {
-                thizz?.putEnemiesOnBoard(enemiesMinuesOne)
+            delay(delaySeconds, closure: {
+                thizz?.putEnemiesOnBoard(enemiesMinuesOne, delaySeconds: delaySeconds)
             })
         }
     }

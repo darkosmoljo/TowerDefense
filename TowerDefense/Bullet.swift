@@ -20,8 +20,9 @@ protocol Bullet {
     func explode()
     
     func getSpeed() -> Float
+    func isAOE() -> Bool
     
-    func recalibrate() -> Bool
+    func recalibrate()
     
     func setTarget(target: Enemy?)
     func setTower(tower: Tower?)

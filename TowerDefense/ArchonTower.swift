@@ -59,23 +59,25 @@ class ArchonTower : TowerNode {
     
     override func createBullet() -> Bullet? {
         
-        return PlasmaBullet()
+        return StormBullet()//PlasmaBullet()
     }
     
     override func fire(enemy: Enemy) {
         super.fire(enemy)
         
-        let currentLocation: CGPoint = CGPoint(x: position.x, y: position.y)
-        let targetLocation: CGPoint = CGPoint(x: enemy.getNode().position.x, y: enemy.getNode().position.y)
-        
-        setScale(1)
-        
-        if (currentLocation.x > targetLocation.x) {
-            xScale = xScale * (-1)
+        if let enemyNode: SKNode = enemy.getNode() {
+            let currentLocation: CGPoint = CGPoint(x: position.x, y: position.y)
+            let targetLocation: CGPoint = CGPoint(x: enemyNode.position.x, y: enemyNode.position.y)
+            
+            setScale(1)
+            
+            if (currentLocation.x > targetLocation.x) {
+                xScale = xScale * (-1)
+            }
+            
+            let attackAnim: SKAction = SKAction.animateWithTextures(archon.archon_attack_up_(), timePerFrame: 0.1)
+            
+            runAction(attackAnim)
         }
-        
-        let attackAnim: SKAction = SKAction.animateWithTextures(archon.archon_attack_up_(), timePerFrame: 0.1)
-        
-        runAction(attackAnim)
     }
 }

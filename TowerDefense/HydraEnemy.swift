@@ -12,7 +12,6 @@ import SpriteKit
 class HydraEnemy: EnemyNode {
     
     let hydra: Hydra
-    var checkpoints: [(CGFloat, CGFloat)]!
     
     
     init(index: Int) {
@@ -36,54 +35,22 @@ class HydraEnemy: EnemyNode {
         return 110
     }
     
-    override func startPath(checkpoints: [(CGFloat, CGFloat)]) {
-        self.checkpoints = checkpoints
-        
-        self.checkpoints.removeAtIndex(0)
-        
-        goto(self.checkpoints[0])
-    }
-    
-    func goto(checkpoint: (CGFloat, CGFloat)) {
-        
-        removeAllActions()
-        
-        let currentLocation: CGPoint = CGPoint(x: position.x, y: position.y)
-        let nextLocation: CGPoint = CGPoint(x: checkpoint.0, y: checkpoint.1)
-        
-        let params: (Double, [SKTexture]) = self.getAnimationAndSpeed(currentLocation, nextLocation: nextLocation)
-        
-        let walkAction: SKAction = SKAction.moveTo(nextLocation, duration: params.0)
-        let walkAnim: SKAction = SKAction.animateWithTextures(params.1, timePerFrame: 0.1)
-        
-        self.checkpoints.removeAtIndex(0)
-        
-        runAction(SKAction.repeatActionForever(walkAnim))
-        
-        runAction(walkAction, completion: {() -> Void in
-            if (self.checkpoints.count > 0) {
-                self.goto(self.checkpoints[0])
-            }
-        })
-    }
-    
-    func getAnimationAndSpeed(currentLocation: CGPoint, nextLocation: CGPoint) -> (Double, [SKTexture]) {
-        let speed: Double = hypot(Double(nextLocation.x) - Double(currentLocation.x), Double(nextLocation.y) - Double(currentLocation.y)) / Double(getSpeed())
+    override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture] {
         
         var anim: [SKTexture] = hydra.hydra_walk_side()
         setScale(1)
         
-        if (currentLocation.x > nextLocation.x) {
+        if (currentLocation.x > nextPoint.x) {
             xScale = xScale * (-1)
         }
-        else if (currentLocation.y < nextLocation.y) {
+        else if (currentLocation.y < nextPoint.y) {
             anim = hydra.hydra_walk_up()
         }
-        else if (currentLocation.y > nextLocation.y) {
+        else if (currentLocation.y > nextPoint.y) {
             anim = hydra.hydra_walk_down()
         }
         
-        return (speed, anim)
+        return anim
     }
     
     override func explode() {

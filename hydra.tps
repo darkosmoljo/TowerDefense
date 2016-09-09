@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.2.3</string>
         <key>fileName</key>
-        <string>/Users/darkosmoljo/Documents/Fax/iOS/TowerDefense/hydra.tps</string>
+        <string>/Users/darkosmoljo/Documents/Git/TowerDefense/hydra.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -312,13 +312,32 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../../../../Downloads/hydra_walk_down_1.png</key>
-            <key type="filename">../../../../Downloads/hydra_walk_down_2.png</key>
-            <key type="filename">../../../../Downloads/hydra_walk_down_3.png</key>
-            <key type="filename">../../../../Downloads/hydra_walk_down_4.png</key>
-            <key type="filename">../../../../Downloads/hydra_walk_down_5.png</key>
-            <key type="filename">../../../../Downloads/hydra_walk_down_6.png</key>
-            <key type="filename">../../../../Downloads/hydra_walk_down_7.png</key>
+            <key type="filename">hydra.atlas/hydra_death1.png</key>
+            <key type="filename">hydra.atlas/hydra_death2.png</key>
+            <key type="filename">hydra.atlas/hydra_death3.png</key>
+            <key type="filename">hydra.atlas/hydra_death4.png</key>
+            <key type="filename">hydra.atlas/hydra_death5.png</key>
+            <key type="filename">hydra.atlas/hydra_death6.png</key>
+            <key type="filename">hydra.atlas/hydra_death7.png</key>
+            <key type="filename">hydra.atlas/hydra_death8.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_down1.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_down2.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_down3.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_down4.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_down5.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_down6.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_side1.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_side2.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_side3.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_side4.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_side5.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_side6.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_up1.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_up2.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_up3.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_up4.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_up5.png</key>
+            <key type="filename">hydra.atlas/hydra_walk_up6.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -327,13 +346,6 @@
         <key>fileList</key>
         <array>
             <filename>hydra.atlas</filename>
-            <filename>../../../../Downloads/hydra_walk_down_1.png</filename>
-            <filename>../../../../Downloads/hydra_walk_down_2.png</filename>
-            <filename>../../../../Downloads/hydra_walk_down_3.png</filename>
-            <filename>../../../../Downloads/hydra_walk_down_4.png</filename>
-            <filename>../../../../Downloads/hydra_walk_down_5.png</filename>
-            <filename>../../../../Downloads/hydra_walk_down_6.png</filename>
-            <filename>../../../../Downloads/hydra_walk_down_7.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -187,16 +187,20 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
     
     func putEnemy(enemy: Enemy) {
         
-        let startingTile = tiles[getMap().getCheckpoints()[0]]
+        if let enemyNode: SKNode = enemy.getNode() {
         
-        enemy.getNode().position = CGPoint(x: startingTile.getNode().position.x, y: startingTile.getNode().position.y)
-        enemy.getNode().zPosition = 2
+            let startingTile = tiles[getMap().getCheckpoints()[0]]
             
-        addChild(enemy.getNode())
-        
-        enemy.startPath(calculateCheckpoints(getMap().getCheckpoints()))
-        
-        shouldCheckForEnemies = true
+            enemyNode.position = CGPoint(x: startingTile.getNode().position.x, y: startingTile.getNode().position.y)
+            enemyNode.zPosition = 2
+            
+            addChild(enemyNode)
+            
+            enemy.setCheckpoints(calculateCheckpoints(getMap().getCheckpoints()))
+            enemy.startPath()
+            
+            shouldCheckForEnemies = true
+        }
     }
     
     func removeEnemy(enemy: Enemy, killed: Bool) {
@@ -222,20 +226,28 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
     }
     
     func putBullet(bullet: Bullet, from tower: Tower) {
-        bullet.getNode().position = CGPoint(x: tower.getNode().position.x, y: tower.getNode().position.y)
+        
+        if (bullet.isAOE()) {
+            bullet.getNode().position = CGPoint(x: (bullet.getTarget()?.getNode()!.position.x)!, y: (bullet.getTarget()?.getNode()!.position.y)!)
+        } else {
+            bullet.getNode().position = CGPoint(x: tower.getNode().position.x, y: tower.getNode().position.y)
+        }
+        
         bullet.getNode().zPosition = 4
         
         addChild(bullet.getNode())
     }
     
-    func calculateCheckpoints(checkpoints: [Int]) -> [(CGFloat, CGFloat)] {
+    func calculateCheckpoints(checkpoints: [Int]) -> [CGPoint] {
         
-        var calculated:[(CGFloat, CGFloat)] = []
+        var calculated:[CGPoint] = []
         
         for checkpoint in checkpoints {
             let tile: Tile = tiles[checkpoint]
             
-            calculated.append((CGRectGetMidX(tile.getNode().frame), CGRectGetMidY(tile.getNode().frame)))
+            let point: CGPoint = CGPoint(x: CGRectGetMidX(tile.getNode().frame), y: CGRectGetMidY(tile.getNode().frame))
+            
+            calculated.append(point)
         }
         
         return calculated
@@ -270,8 +282,8 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
                 
                 if let cc: CommandCenter = contact.bodyA.node as? CommandCenter {
                 
+                    cc.enemyAttack(enemy.damage())
                     removeEnemy(enemy, killed: false)
-                    cc.enemyAttack()
                 }
             }
         }
@@ -297,7 +309,7 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
                 
                 if let enemy: Enemy = contact.bodyA.node as? Enemy {
                 
-                    if enemy.getId() == bullet.getTarget()?.getId() {
+                    if bullet.isAOE() || enemy.getId() == bullet.getTarget()?.getId() {
                         enemy.takeDamage(bullet.getDamage())
                         bullet.explode()
                         

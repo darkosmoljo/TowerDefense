@@ -11,12 +11,14 @@ import SpriteKit
 
 protocol Enemy {
     
-    func startPath(checkpoints: [(CGFloat, CGFloat)])
+    func setCheckpoints(checkpoints: [CGPoint])
+    func startPath()
     func getSpeed() -> Int
-    func getNode() -> SKSpriteNode
+    func getNode() -> SKSpriteNode?
     
     func explode()
     func takeDamage(damage: Int)
+    func damage() -> Int
     func getHealth() -> Int
     func getValue() -> Int
     

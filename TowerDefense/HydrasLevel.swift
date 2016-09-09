@@ -17,4 +17,8 @@ class HydrasLevel: Level {
     func getId() -> String{
         return "HydrasLevel"
     }
+
+    func getDelay() -> Double {
+        return 0.55
+    }
 }

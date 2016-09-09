@@ -13,9 +13,16 @@ class EnemyNode : SKSpriteNode, Enemy {
     
     var id: String!
     var health: Int = 100
+    var checkpoints: [CGPoint]!
     
-    func startPath(checkpoints: [(CGFloat, CGFloat)]) {
+    func setCheckpoints(checkpoints: [CGPoint]) {
+        self.checkpoints = checkpoints
+    }
+    
+    func startPath() {
+        self.checkpoints.removeFirst()
         
+        goto(self.checkpoints[0])
     }
     
     func getSpeed() -> Int {
@@ -26,7 +33,7 @@ class EnemyNode : SKSpriteNode, Enemy {
         return 5
     }
     
-    func getNode() -> SKSpriteNode {
+    func getNode() -> SKSpriteNode? {
         return self
     }
     
@@ -56,11 +63,48 @@ class EnemyNode : SKSpriteNode, Enemy {
         removeFromParent()
     }
     
+    func damage() -> Int {
+        return 1
+    }
+    
     func takeDamage(damage: Int) {
         health = health - damage
     }
     
     func getHealth() -> Int {
         return health
+    }
+    
+    func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {
+        return nil
+    }
+    
+    // private methods
+    
+    private func calculateSpeed(nextPoint: CGPoint) -> Double {
+        return hypot(Double(nextPoint.x) - Double(position.x), Double(nextPoint.y) - Double(position.y)) / Double(getSpeed())
+    }
+    
+    private func goto(nextLocation: CGPoint) {
+        removeAllActions()
+        
+        let currentLocation: CGPoint = CGPoint(x: position.x, y: position.y)
+        
+        let nextPoint: CGPoint = CGPoint(x: nextLocation.x, y: nextLocation.y)
+        let speed: Double = calculateSpeed(nextPoint)
+        
+        if let animation: [SKTexture] = getAnimation(currentLocation, nextPoint: nextPoint) {
+            let walkAnim: SKAction = SKAction.animateWithTextures(animation, timePerFrame: 0.1)
+            runAction(SKAction.repeatActionForever(walkAnim))
+        }
+        
+        self.checkpoints.removeAtIndex(0)
+        
+        let walkAction: SKAction = SKAction.moveTo(nextPoint, duration: speed)
+        runAction(walkAction, completion: {() -> Void in
+            if (self.checkpoints.count > 0) {
+                self.goto(self.checkpoints[0])
+            }
+        })
     }
 }

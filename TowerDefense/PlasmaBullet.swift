@@ -36,4 +36,8 @@ class PlasmaBullet: BulletNode {
     override func getDamage() -> Int {
         return 14
     }
+    
+    override func getSpeed() -> Float {
+        return 300.0
+    }
 }
