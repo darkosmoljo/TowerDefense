@@ -18,7 +18,6 @@ class Storm {
     let STORM5 = "storm5"
     let STORM6 = "storm6"
     let STORM7 = "storm7"
-    let STORM8 = "storm8"
 
 
     // load texture atlas
@@ -33,7 +32,6 @@ class Storm {
     func storm5() -> SKTexture { return textureAtlas.textureNamed(STORM5) }
     func storm6() -> SKTexture { return textureAtlas.textureNamed(STORM6) }
     func storm7() -> SKTexture { return textureAtlas.textureNamed(STORM7) }
-    func storm8() -> SKTexture { return textureAtlas.textureNamed(STORM8) }
 
 
     // texture arrays for animations
@@ -45,8 +43,7 @@ class Storm {
             storm4(),
             storm5(),
             storm6(),
-            storm7(),
-            storm8()
+            storm7()
         ]
     }
 

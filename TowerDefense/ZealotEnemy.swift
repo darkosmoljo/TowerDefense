@@ -25,7 +25,7 @@ class ZealotEnemy: EnemyNode {
         super.init(texture: texture, color: UIColor.clearColor(), size: texture.size())
         
         name = "enemy"
-        id = zealot.ZEALOT_ATTACK_SIDE1 + "_\(index)"
+        id = zealot.ZEALOT_ATTACK_DOWN_RIGHT1 + "_\(index)"
     }
     
     required init?(coder aDecoder: NSCoder) {

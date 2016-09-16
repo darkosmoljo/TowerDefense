@@ -25,23 +25,12 @@ class RangeNode: SKShapeNode, Range {
         return self
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        
-        for touch in touches {
-            let touchPoint = touch.locationInNode(self)
-            let nodes = self.nodesAtPoint(touchPoint)
-            
-            print(nodes.count)
-        }
-    }
-    
     override init() {
         super.init()
         
         fillColor = UIColor.darkGrayColor()
         strokeColor = UIColor.blackColor()
         alpha = 0
-        userInteractionEnabled = true
     }
     
     required init?(coder aDecoder: NSCoder) {

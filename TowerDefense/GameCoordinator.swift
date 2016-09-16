@@ -54,7 +54,7 @@ final class GameCoordinator {
         
         weak var thizz: GameCoordinator! = self
 
-        delay(10, closure: {
+        Utils.delay(5, closure: {
             thizz?.startFirstLevel()
         })
     }
@@ -98,21 +98,9 @@ final class GameCoordinator {
             
             weak var thizz: GameCoordinator! = self
             
-            delay(delaySeconds, closure: {
+            Utils.delay(delaySeconds, closure: {
                 thizz?.putEnemiesOnBoard(enemiesMinuesOne, delaySeconds: delaySeconds)
             })
         }
     }
-    
-    private func delay(delay: Double, closure: ()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(),
-            closure
-        )
-    }
-    
 }

@@ -16,7 +16,7 @@ protocol Bullet {
     func getTarget() -> Enemy?
     func getDamage() -> Int
     
-    func getNode() -> SKSpriteNode
+    func getNode() -> SKNode
     func explode()
     
     func getSpeed() -> Float

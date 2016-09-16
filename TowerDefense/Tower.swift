@@ -15,7 +15,7 @@ protocol Tower {
     func getNode() -> SKSpriteNode
     func createTower() -> Tower
     
-    func getRange() -> Range
+    func getRange() -> Range?
     func toggleRangeVisibility()
     
     func didEnterRegion(enemy: Enemy)

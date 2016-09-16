@@ -73,7 +73,7 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
         self.commandCenter.listener = self
         
         self.commandCenter.position = CGPoint(x: tile.getNode().position.x, y: tile.getNode().position.y)
-        self.commandCenter.zPosition = 1
+        self.commandCenter.zPosition = 2
         
         addChild(commandCenter)
         
@@ -173,11 +173,13 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
             tower.getNode().position = CGPoint(x: selectedTile.getNode().position.x, y: selectedTile.getNode().position.y)
             tower.getNode().zPosition = 3
             
-            tower.getRange().getNode().position = CGPoint(x: selectedTile.getNode().position.x, y: selectedTile.getNode().position.y)
-            tower.getRange().getNode().zPosition = 2
+            if let range = tower.getRange() {
+                range.getNode().position = CGPoint(x: selectedTile.getNode().position.x, y: selectedTile.getNode().position.y)
+                range.getNode().zPosition = 2
+                addChild(range.getNode())
+            }
             
             addChild(tower.getNode())
-            addChild(tower.getRange().getNode())
             
             (tower.getRange() as? RangeNode)?.setupPhysicsBody()
         
@@ -227,13 +229,13 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
     
     func putBullet(bullet: Bullet, from tower: Tower) {
         
-        if (bullet.isAOE()) {
+        if (bullet.isAOE() || bullet.getSpeed() == 0) {
             bullet.getNode().position = CGPoint(x: (bullet.getTarget()?.getNode()!.position.x)!, y: (bullet.getTarget()?.getNode()!.position.y)!)
         } else {
             bullet.getNode().position = CGPoint(x: tower.getNode().position.x, y: tower.getNode().position.y)
         }
         
-        bullet.getNode().zPosition = 4
+        bullet.getNode().zPosition = 5
         
         addChild(bullet.getNode())
     }
@@ -309,7 +311,8 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
                 
                 if let enemy: Enemy = contact.bodyA.node as? Enemy {
                 
-                    if bullet.isAOE() || enemy.getId() == bullet.getTarget()?.getId() {
+                    if enemy.getHealth() > 0 && (bullet.isAOE() || enemy.getId() == bullet.getTarget()?.getId()) {
+                        
                         enemy.takeDamage(bullet.getDamage())
                         bullet.explode()
                         
@@ -326,11 +329,13 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
         if (contact.bodyA.categoryBitMask == CollisionBitMasks.enemy &&
             contact.bodyB.categoryBitMask == CollisionBitMasks.range) {
             
-            print("leaving")
-            
-            let enemy: Enemy = contact.bodyA.node as! Enemy
-            
-            (contact.bodyB.node as! Range).getTower().didExitRegion(enemy)
+            if let enemy: Enemy = contact.bodyA.node as? Enemy {
+                
+                if let range = contact.bodyB.node as? Range {
+                    
+                    range.getTower().didExitRegion(enemy)
+                }
+            }
         }
     }
 }

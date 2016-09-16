@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 4.2.3 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e5e48cf20da82680c20b8060a169ffcd:21204c7b2c023f13b51189146966853e:02983272b661c566c1886058b33a99b6$</string>
+            <string>$TexturePacker:SmartUpdate:fb2dbd7fe4e5ea61088c47e91980b58c:87e2050915815e0f8346ae6e8f5dc370:02983272b661c566c1886058b33a99b6$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,7 +17,7 @@
                 <key>path</key>
                 <string>Storm.1.png</string>
                 <key>size</key>
-                <string>{32,211}</string>
+                <string>{253,129}</string>
                 <key>subimages</key>
                 <array>
                     <dict>
@@ -26,13 +26,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>storm1.png</string>
+                        <string>storm2.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
-                        <string>{30,26}</string>
+                        <string>{72,67}</string>
                         <key>textureRect</key>
-                        <string>{{1,1},{30,26}}</string>
+                        <string>{{1,1},{69,67}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -44,43 +44,11 @@
                         <key>name</key>
                         <string>storm4.png</string>
                         <key>spriteOffset</key>
-                        <string>{0,0}</string>
+                        <string>{0,2}</string>
                         <key>spriteSourceSize</key>
-                        <string>{30,25}</string>
+                        <string>{75,63}</string>
                         <key>textureRect</key>
-                        <string>{{1,29},{30,25}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>storm2.png</string>
-                        <key>spriteOffset</key>
-                        <string>{0,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{30,24}</string>
-                        <key>textureRect</key>
-                        <string>{{1,56},{30,24}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>storm3.png</string>
-                        <key>spriteOffset</key>
-                        <string>{0,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{30,24}</string>
-                        <key>textureRect</key>
-                        <string>{{1,82},{30,24}}</string>
+                        <string>{{72,1},{75,61}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -94,9 +62,25 @@
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
-                        <string>{30,24}</string>
+                        <string>{70,66}</string>
                         <key>textureRect</key>
-                        <string>{{1,108},{30,24}}</string>
+                        <string>{{149,1},{68,66}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>storm1.png</string>
+                        <key>spriteOffset</key>
+                        <string>{1,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{71,64}</string>
+                        <key>textureRect</key>
+                        <string>{{72,64},{70,64}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -110,9 +94,25 @@
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
-                        <string>{30,24}</string>
+                        <string>{67,58}</string>
                         <key>textureRect</key>
-                        <string>{{1,134},{30,24}}</string>
+                        <string>{{1,70},{63,58}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>storm3.png</string>
+                        <key>spriteOffset</key>
+                        <string>{0,6}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{73,63}</string>
+                        <key>textureRect</key>
+                        <string>{{144,69},{64,57}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -126,27 +126,11 @@
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
-                        <string>{30,24}</string>
+                        <string>{62,45}</string>
                         <key>textureRect</key>
-                        <string>{{1,160},{30,24}}</string>
+                        <string>{{210,69},{42,58}}</string>
                         <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>storm8.png</string>
-                        <key>spriteOffset</key>
-                        <string>{0,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{30,24}</string>
-                        <key>textureRect</key>
-                        <string>{{1,186},{30,24}}</string>
-                        <key>textureRotated</key>
-                        <false/>
+                        <true/>
                     </dict>
                 </array>
             </dict>

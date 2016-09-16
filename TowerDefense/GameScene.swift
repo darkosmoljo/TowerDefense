@@ -123,7 +123,17 @@ class GameScene: SKScene, Scene, UIListener, BoardListener {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        print("Game Scene touched")
+        
+        for touch in touches {
+            let touchPoint = touch.locationInNode(self)
+            let nodes = self.nodesAtPoint(touchPoint)
+            
+            for node: SKNode in nodes {
+                if ((node as? Tile) != nil) && (node as! Tile).isSelectable() {
+                    node.touchesEnded(touches, withEvent: event)
+                }
+            }
+        }
     }
     
     override func update(currentTime: CFTimeInterval) {

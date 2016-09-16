@@ -57,12 +57,13 @@ class DefaultTile: SKSpriteNode, Tile {
         
         selected = state
         
-        alpha = selected == true ? 0.6 : 1
+        alpha = selected == true ? 0.5 : 1
         
         listener?.toggleStateSelected(self)
     }
     
     func addTower(tower: Tower) {
+        
         let towerSprite: SKSpriteNode = tower.getNode()
         
         towerSprite.name = "tower_\(index)"

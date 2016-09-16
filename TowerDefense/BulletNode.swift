@@ -14,10 +14,10 @@ class BulletNode: SKSpriteNode, Bullet {
     var target: Enemy!
     var tower: Tower!
     
-    var isExploading: Bool = false
-    
     var explodeAnim: SKAction!
     var animation: SKAction!
+    
+    var exploading: Bool = false
     
     func getSpeed() -> Float {
         return 0
@@ -54,7 +54,7 @@ class BulletNode: SKSpriteNode, Bullet {
         return false
     }
     
-    func getNode() -> SKSpriteNode {
+    func getNode() -> SKNode {
         return self
     }
     
@@ -67,7 +67,7 @@ class BulletNode: SKSpriteNode, Bullet {
     }
     
     func explode() {
-        isExploading = true
+        exploading = true
         clearInstance()
     }
     

@@ -59,6 +59,19 @@
 		E7CCA3E21C348B4100B27EC0 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3E11C348B4100B27EC0 /* Map.swift */; };
 		E7CCA3E41C348C0A00B27EC0 /* GrassMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3E31C348C0A00B27EC0 /* GrassMap.swift */; };
 		E7DCE9D91CEA4C34006F4BCA /* PortraitViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCE9D81CEA4C34006F4BCA /* PortraitViewCell.swift */; };
+		E7E1093E1D874C8800BB94BC /* CloudBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E1093D1D874C8800BB94BC /* CloudBullet.swift */; };
+		E7E109401D874CB500BB94BC /* Cloud.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7E1093F1D874CB500BB94BC /* Cloud.atlasc */; };
+		E7E109421D874CBF00BB94BC /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E109411D874CBF00BB94BC /* Cloud.swift */; };
+		E7E109441D8765F600BB94BC /* Templar.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7E109431D8765F600BB94BC /* Templar.atlasc */; };
+		E7E109461D8765FF00BB94BC /* Templar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E109451D8765FF00BB94BC /* Templar.swift */; };
+		E7E109481D87660F00BB94BC /* TemplarTower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E109471D87660F00BB94BC /* TemplarTower.swift */; };
+		E7E1094A1D87E7A400BB94BC /* ZealotTower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E109491D87E7A400BB94BC /* ZealotTower.swift */; };
+		E7E1094C1D880B9800BB94BC /* Dark.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7E1094B1D880B9800BB94BC /* Dark.atlasc */; };
+		E7E1094E1D880BA700BB94BC /* Dark.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E1094D1D880BA700BB94BC /* Dark.swift */; };
+		E7E109501D880C1300BB94BC /* DarkTower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E1094F1D880C1300BB94BC /* DarkTower.swift */; };
+		E7E109521D880D6100BB94BC /* MeleeAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E109511D880D6100BB94BC /* MeleeAttack.swift */; };
+		E7E109541D880F7D00BB94BC /* BulletNodeShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E109531D880F7D00BB94BC /* BulletNodeShape.swift */; };
+		E7E109561D883E3100BB94BC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E109551D883E3100BB94BC /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +150,19 @@
 		E7CCA3E11C348B4100B27EC0 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		E7CCA3E31C348C0A00B27EC0 /* GrassMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrassMap.swift; sourceTree = "<group>"; };
 		E7DCE9D81CEA4C34006F4BCA /* PortraitViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitViewCell.swift; sourceTree = "<group>"; };
+		E7E1093D1D874C8800BB94BC /* CloudBullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudBullet.swift; sourceTree = "<group>"; };
+		E7E1093F1D874CB500BB94BC /* Cloud.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Cloud.atlasc; sourceTree = "<group>"; };
+		E7E109411D874CBF00BB94BC /* Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		E7E109431D8765F600BB94BC /* Templar.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templar.atlasc; sourceTree = "<group>"; };
+		E7E109451D8765FF00BB94BC /* Templar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Templar.swift; sourceTree = "<group>"; };
+		E7E109471D87660F00BB94BC /* TemplarTower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplarTower.swift; sourceTree = "<group>"; };
+		E7E109491D87E7A400BB94BC /* ZealotTower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZealotTower.swift; sourceTree = "<group>"; };
+		E7E1094B1D880B9800BB94BC /* Dark.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dark.atlasc; sourceTree = "<group>"; };
+		E7E1094D1D880BA700BB94BC /* Dark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dark.swift; sourceTree = "<group>"; };
+		E7E1094F1D880C1300BB94BC /* DarkTower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkTower.swift; sourceTree = "<group>"; };
+		E7E109511D880D6100BB94BC /* MeleeAttack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeleeAttack.swift; sourceTree = "<group>"; };
+		E7E109531D880F7D00BB94BC /* BulletNodeShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletNodeShape.swift; sourceTree = "<group>"; };
+		E7E109551D883E3100BB94BC /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +224,9 @@
 			children = (
 				E73F79A21CE9FC47008CD865 /* ArchonTower.swift */,
 				E7B48E7A1CF38DF300F8C5EC /* CommandCenter.swift */,
+				E7E109471D87660F00BB94BC /* TemplarTower.swift */,
+				E7E109491D87E7A400BB94BC /* ZealotTower.swift */,
+				E7E1094F1D880C1300BB94BC /* DarkTower.swift */,
 			);
 			name = Towers;
 			sourceTree = "<group>";
@@ -205,6 +234,9 @@
 		E73F79A91CEA2568008CD865 /* SwiftSprites */ = {
 			isa = PBXGroup;
 			children = (
+				E7E1094D1D880BA700BB94BC /* Dark.swift */,
+				E7E109451D8765FF00BB94BC /* Templar.swift */,
+				E7E109411D874CBF00BB94BC /* Cloud.swift */,
 				E7960D231D81AD380018531B /* Storm.swift */,
 				E70497FD1D7E219F000F60E1 /* Hydra.swift */,
 				E7B448231CF6462100FA4342 /* Plasma.swift */,
@@ -217,6 +249,9 @@
 		E774C60E1CEA5F2600FF3892 /* Atlas */ = {
 			isa = PBXGroup;
 			children = (
+				E7E1094B1D880B9800BB94BC /* Dark.atlasc */,
+				E7E109431D8765F600BB94BC /* Templar.atlasc */,
+				E7E1093F1D874CB500BB94BC /* Cloud.atlasc */,
 				E7960D211D81AD280018531B /* Storm.atlasc */,
 				E70497FB1D7E2144000F60E1 /* Hydra.atlasc */,
 				E7B448251CF657FD00FA4342 /* Plasma.atlasc */,
@@ -233,6 +268,7 @@
 				E7B448141CF60F6600FA4342 /* TowerNode.swift */,
 				E7B448181CF61B0D00FA4342 /* RangeNode.swift */,
 				E7B4481C1CF63DBF00FA4342 /* BulletNode.swift */,
+				E7E109531D880F7D00BB94BC /* BulletNodeShape.swift */,
 			);
 			name = Nodes;
 			sourceTree = "<group>";
@@ -242,6 +278,8 @@
 			children = (
 				E7B448211CF6455000FA4342 /* PlasmaBullet.swift */,
 				E7960D251D81AD460018531B /* StormBullet.swift */,
+				E7E1093D1D874C8800BB94BC /* CloudBullet.swift */,
+				E7E109511D880D6100BB94BC /* MeleeAttack.swift */,
 			);
 			name = Bullets;
 			sourceTree = "<group>";
@@ -344,6 +382,7 @@
 			children = (
 				E7CCA3D81C3483DB00B27EC0 /* GameCoordinator.swift */,
 				E7B48E7C1CF39AE500F8C5EC /* CollisionBitMasks.swift */,
+				E7E109551D883E3100BB94BC /* Utils.swift */,
 			);
 			name = Coordinator;
 			sourceTree = "<group>";
@@ -425,13 +464,16 @@
 					E7CCA38B1C343A8400B27EC0 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = WXRW3HW2AD;
+						LastSwiftMigration = 0800;
 					};
 					E7CCA3A31C343A8400B27EC0 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = E7CCA38B1C343A8400B27EC0;
 					};
 					E7CCA3AE1C343A8400B27EC0 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = E7CCA38B1C343A8400B27EC0;
 					};
 				};
@@ -462,12 +504,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E774C60D1CEA5F1B00FF3892 /* Zealot.atlasc in Resources */,
+				E7E109441D8765F600BB94BC /* Templar.atlasc in Resources */,
 				E774C60C1CEA5F1B00FF3892 /* Archon.atlasc in Resources */,
 				E70497FC1D7E2144000F60E1 /* Hydra.atlasc in Resources */,
 				E7B448261CF657FD00FA4342 /* Plasma.atlasc in Resources */,
 				E7CCA3921C343A8400B27EC0 /* GameScene.sks in Resources */,
 				E7CCA39E1C343A8400B27EC0 /* LaunchScreen.storyboard in Resources */,
+				E7E1094C1D880B9800BB94BC /* Dark.atlasc in Resources */,
 				E7960D221D81AD280018531B /* Storm.atlasc in Resources */,
+				E7E109401D874CB500BB94BC /* Cloud.atlasc in Resources */,
 				E7CCA39B1C343A8400B27EC0 /* Assets.xcassets in Resources */,
 				E7CCA3991C343A8400B27EC0 /* Main.storyboard in Resources */,
 			);
@@ -495,9 +540,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CCA3E21C348B4100B27EC0 /* Map.swift in Sources */,
+				E7E109461D8765FF00BB94BC /* Templar.swift in Sources */,
 				E7B448191CF61B0D00FA4342 /* RangeNode.swift in Sources */,
 				E7471F5B1CE67DCD004B22AC /* Tile.swift in Sources */,
 				E7960D241D81AD380018531B /* Storm.swift in Sources */,
+				E7E109421D874CBF00BB94BC /* Cloud.swift in Sources */,
 				E73F79A31CE9FC47008CD865 /* ArchonTower.swift in Sources */,
 				E70498041D7F683C000F60E1 /* MixedLevel1.swift in Sources */,
 				E7CCA3941C343A8400B27EC0 /* GameScene.swift in Sources */,
@@ -505,6 +552,9 @@
 				E7CCA3E41C348C0A00B27EC0 /* GrassMap.swift in Sources */,
 				E7CCA3961C343A8400B27EC0 /* GameViewController.swift in Sources */,
 				E71F5B701CF101E7004CE2F2 /* ZealotEnemy.swift in Sources */,
+				E7E109501D880C1300BB94BC /* DarkTower.swift in Sources */,
+				E7E1093E1D874C8800BB94BC /* CloudBullet.swift in Sources */,
+				E7E1094A1D87E7A400BB94BC /* ZealotTower.swift in Sources */,
 				E71F5B731CF120A3004CE2F2 /* ZealotsLevel.swift in Sources */,
 				E73F79A81CEA255F008CD865 /* Zealot.swift in Sources */,
 				E7B448221CF6455000FA4342 /* PlasmaBullet.swift in Sources */,
@@ -515,19 +565,24 @@
 				E7DCE9D91CEA4C34006F4BCA /* PortraitViewCell.swift in Sources */,
 				E73F799F1CE9DAE9008CD865 /* Tower.swift in Sources */,
 				E7CCA3D91C3483DB00B27EC0 /* GameCoordinator.swift in Sources */,
+				E7E109561D883E3100BB94BC /* Utils.swift in Sources */,
 				E7B448131CF5FECA00FA4342 /* EnemyNode.swift in Sources */,
 				E70498061D7F7F3D000F60E1 /* UIOutlinedLabel.swift in Sources */,
+				E7E109481D87660F00BB94BC /* TemplarTower.swift in Sources */,
 				E7B448241CF6462100FA4342 /* Plasma.swift in Sources */,
 				E7CCA3D61C346DAD00B27EC0 /* DefaultTile.swift in Sources */,
 				E70497FE1D7E219F000F60E1 /* Hydra.swift in Sources */,
 				E7960D261D81AD460018531B /* StormBullet.swift in Sources */,
+				E7E1094E1D880BA700BB94BC /* Dark.swift in Sources */,
 				E7B448171CF61AE500FA4342 /* Range.swift in Sources */,
 				E73F79A11CE9E8C6008CD865 /* Scene.swift in Sources */,
 				E7CCA3DE1C34883900B27EC0 /* Enemy.swift in Sources */,
 				E7CCA3901C343A8400B27EC0 /* AppDelegate.swift in Sources */,
 				E7CCA3DB1C34875700B27EC0 /* Level.swift in Sources */,
+				E7E109541D880F7D00BB94BC /* BulletNodeShape.swift in Sources */,
 				E73F799D1CE9DA98008CD865 /* UIListener.swift in Sources */,
 				E7B4481D1CF63DBF00FA4342 /* BulletNode.swift in Sources */,
+				E7E109521D880D6100BB94BC /* MeleeAttack.swift in Sources */,
 				E7CCA3C21C343C5400B27EC0 /* MainViewController.swift in Sources */,
 				E70773EB1CE9218F00C9DC93 /* TileListener.swift in Sources */,
 				E70498001D7E24C8000F60E1 /* HydrasLevel.swift in Sources */,
@@ -679,6 +734,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -691,6 +747,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -703,6 +760,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefenseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TowerDefense.app/TowerDefense";
 			};
 			name = Debug;
@@ -715,6 +773,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefenseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TowerDefense.app/TowerDefense";
 			};
 			name = Release;
@@ -727,6 +786,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefenseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = TowerDefense;
 				USES_XCTRUNNER = YES;
 			};
@@ -739,6 +799,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darkosmoljo.TowerDefenseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = TowerDefense;
 				USES_XCTRUNNER = YES;
 			};

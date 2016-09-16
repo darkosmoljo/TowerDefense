@@ -12,10 +12,14 @@ import SpriteKit
 class PlasmaBullet: BulletNode {
     
     var plasma: Plasma!
+    let bulletDamage: Int!
+    let bulletSpeed: Float!
     
-    init() {
+    init(bulletDamage: Int, bulletSpeed: Float) {
         
         self.plasma = Plasma()
+        self.bulletDamage = bulletDamage
+        self.bulletSpeed = bulletSpeed
         
         let texture: SKTexture = plasma.plasma_bullet_1()
         
@@ -34,10 +38,10 @@ class PlasmaBullet: BulletNode {
     }
     
     override func getDamage() -> Int {
-        return 14
+        return bulletDamage
     }
     
     override func getSpeed() -> Float {
-        return 300.0
+        return bulletSpeed
     }
 }

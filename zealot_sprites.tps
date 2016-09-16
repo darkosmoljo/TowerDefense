@@ -312,11 +312,22 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">zealot.atlas/zealot_attack_side1.png</key>
-            <key type="filename">zealot.atlas/zealot_attack_side2.png</key>
-            <key type="filename">zealot.atlas/zealot_attack_side3.png</key>
-            <key type="filename">zealot.atlas/zealot_attack_side4.png</key>
-            <key type="filename">zealot.atlas/zealot_attack_side5.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_down_right1.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_down_right2.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_down_right3.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_down_right4.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_down_right5.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_down_right6.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_down_right7.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_down_right8.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_up_right1.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_up_right2.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_up_right3.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_up_right4.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_up_right5.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_up_right6.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_up_right7.png</key>
+            <key type="filename">zealot.atlas/zealot_attack_up_right8.png</key>
             <key type="filename">zealot.atlas/zealot_death1.png</key>
             <key type="filename">zealot.atlas/zealot_death2.png</key>
             <key type="filename">zealot.atlas/zealot_death3.png</key>

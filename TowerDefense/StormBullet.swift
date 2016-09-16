@@ -12,10 +12,12 @@ import SpriteKit
 class StormBullet: BulletNode {
     
     var storm: Storm
+    var bulletDamage: Int!
     
-    init() {
+    init(bulletDamage: Int) {
         
         self.storm = Storm()
+        self.bulletDamage = bulletDamage
         
         let texture: SKTexture = storm.storm1()
         
@@ -31,7 +33,7 @@ class StormBullet: BulletNode {
     }
     
     override func getDamage() -> Int {
-        return 10
+        return bulletDamage
     }
     
     override func animate() {
@@ -42,9 +44,9 @@ class StormBullet: BulletNode {
     }
     
     override func explode() {
-        if (isExploading == false) {
+        if (exploading == false) {
         
-            isExploading = true
+            exploading = true
             
             let stormAnim: SKAction = SKAction.animateWithTextures(storm.storm(), timePerFrame: 0.06)
             

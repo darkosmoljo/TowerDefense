@@ -20,7 +20,7 @@ public class GrassMap : Map {
         
         levels = [ZealotsLevel(), HydrasLevel(), MixedLevel1()]
         
-        towers = [ArchonTower(), ArchonTower(), ArchonTower(), ArchonTower(), ArchonTower(), ArchonTower(), ArchonTower()]
+        towers = [ZealotTower(), TemplarTower(), ArchonTower(), DarkTower()]
         
         path = [25, 26, 27, 28, 33, 34, 35, 36, 37, 38, 46, 49, 54, 59, 63, 64, 65, 66, 67, 70,
                 75, 80, 91, 96, 101, 109, 110, 111, 112, 114, 115, 116, 117, 122, 130, 135, 143,

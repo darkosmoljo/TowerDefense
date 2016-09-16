@@ -55,6 +55,4 @@ class Archon {
             archon_attack_up_10()
         ]
     }
-
-
 }

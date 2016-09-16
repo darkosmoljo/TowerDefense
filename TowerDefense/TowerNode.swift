@@ -10,9 +10,12 @@ import Foundation
 import SpriteKit
 
 class TowerNode: SKSpriteNode, Tower {
-    
+
     var bullet: Bullet!
     var enemiesInRange: [Enemy] = []
+    var range: Range? = nil
+    var cooldown: Bool = false
+    var cooldownDelay: Double = 0.1
     
     override init(texture: SKTexture?, color: UIColor, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
@@ -36,8 +39,8 @@ class TowerNode: SKSpriteNode, Tower {
         return TowerNode()
     }
     
-    func getRange() -> Range {
-        return RangeNode()
+    func getRange() -> Range? {
+        return range
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -45,16 +48,36 @@ class TowerNode: SKSpriteNode, Tower {
     }
     
     func toggleRangeVisibility() {
-        print("tower touched")
+        if (range?.getNode().alpha == 0) {
+            showRange()
+        } else {
+            hideRange()
+        }
+    }
+    
+    private func showRange() {
+        range?.getNode().alpha = 0.2
+    }
+    
+    private func hideRange() {
+        range?.getNode().alpha = 0
     }
     
     func didEnterRegion(enemy: Enemy)  {
         enemiesInRange.append(enemy)
+        
+        if (enemiesInRange.count > 0) {
+            showRange()
+        }
     }
     
     func didExitRegion(enemy: Enemy) {
         if let index = enemiesInRange.indexOf({return $0.getId() == enemy.getId()}) {
             enemiesInRange.removeAtIndex(index)
+        }
+        
+        if (enemiesInRange.count <= 0) {
+            hideRange()
         }
     }
     
@@ -78,7 +101,11 @@ class TowerNode: SKSpriteNode, Tower {
     }
     
     func fireOrRecalibrate() -> Bullet? {
-        if (getBullet() == nil && enemiesInRange.count > 0) {
+        if (getBullet() != nil) {
+            
+            recalibrate()
+            
+        } else if (enemiesInRange.count > 0 && cooldown == false) {
             
             setBullet(createBullet())
             
@@ -86,18 +113,20 @@ class TowerNode: SKSpriteNode, Tower {
             
             return getBullet()
         }
-        else
-        {
-            recalibrate()
-            
-            return nil
-        }
+        
+        return nil;
     }
     
     func fire(enemy: Enemy) {
         bullet?.setTower(self)
         bullet?.setTarget(enemy)
         bullet?.fire()
+        
+        cooldown = true
+        
+        Utils.delay(cooldownDelay, closure: {
+            self.cooldown = false
+        })
     }
     
     func createBullet() -> Bullet? {

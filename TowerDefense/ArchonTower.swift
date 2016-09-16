@@ -13,7 +13,6 @@ class ArchonTower : TowerNode {
     
     let iconString: String = "archon_portrait"
     let archon: Archon = Archon()
-    let range: Range = RangeNode(circleOfRadius: 80)
     
     override func getPrice() -> Int {
         return 35
@@ -25,7 +24,10 @@ class ArchonTower : TowerNode {
         
         super.init(texture: texture, color: UIColor.clearColor(), size: texture.size())
         
-        range.setTower(self)
+        range = RangeNode(circleOfRadius: 80)
+        range?.setTower(self)
+        
+        cooldownDelay = 0.9
         
         userInteractionEnabled = true
     }
@@ -37,10 +39,6 @@ class ArchonTower : TowerNode {
     override func getIconString() -> String {
         return iconString
     }
-
-    override func getRange() -> Range {
-        return range
-    }
     
     override func createTower() -> Tower {
         
@@ -49,17 +47,9 @@ class ArchonTower : TowerNode {
         return tower
     }
     
-    override func toggleRangeVisibility() {
-        if (range.getNode().alpha == 0) {
-            range.getNode().alpha = 0.2
-        } else {
-            range.getNode().alpha = 0
-        }
-    }
-    
     override func createBullet() -> Bullet? {
         
-        return StormBullet()//PlasmaBullet()
+        return StormBullet(bulletDamage: 12)
     }
     
     override func fire(enemy: Enemy) {
@@ -75,7 +65,7 @@ class ArchonTower : TowerNode {
                 xScale = xScale * (-1)
             }
             
-            let attackAnim: SKAction = SKAction.animateWithTextures(archon.archon_attack_up_(), timePerFrame: 0.1)
+            let attackAnim: SKAction = SKAction.animateWithTextures(archon.archon_attack_up_(), timePerFrame: 0.04)
             
             runAction(attackAnim)
         }

@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 4.2.3 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:076b054d38b62d71a61f9693c4fa8861:f398617e7845ef9ba2393f1f73768b01:ffa35660ed3fb573846574c2a0036c70$</string>
+            <string>$TexturePacker:SmartUpdate:d92b82e8c89b5be7ae547a12dacdfbae:3062b89f29e93fe708a47530a9db32b6:ffa35660ed3fb573846574c2a0036c70$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,57 +17,9 @@
                 <key>path</key>
                 <string>Zealot.1.png</string>
                 <key>size</key>
-                <string>{64,792}</string>
+                <string>{430,127}</string>
                 <key>subimages</key>
                 <array>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_death3.png</string>
-                        <key>spriteOffset</key>
-                        <string>{1,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{51,64}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1},{61,50}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_death2.png</string>
-                        <key>spriteOffset</key>
-                        <string>{1,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{50,55}</string>
-                        <key>textureRect</key>
-                        <string>{{1,53},{55,49}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_death6.png</string>
-                        <key>spriteOffset</key>
-                        <string>{3,5}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{50,60}</string>
-                        <key>textureRect</key>
-                        <string>{{1,104},{55,44}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
                     <dict>
                         <key>aliases</key>
                         <array/>
@@ -80,7 +32,7 @@
                         <key>spriteSourceSize</key>
                         <string>{53,70}</string>
                         <key>textureRect</key>
-                        <string>{{1,150},{53,68}}</string>
+                        <string>{{1,1},{53,68}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -96,7 +48,55 @@
                         <key>spriteSourceSize</key>
                         <string>{52,70}</string>
                         <key>textureRect</key>
-                        <string>{{1,220},{49,68}}</string>
+                        <string>{{1,71},{68,49}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_death3.png</string>
+                        <key>spriteOffset</key>
+                        <string>{1,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{51,64}</string>
+                        <key>textureRect</key>
+                        <string>{{56,1},{50,61}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_death2.png</string>
+                        <key>spriteOffset</key>
+                        <string>{1,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{50,55}</string>
+                        <key>textureRect</key>
+                        <string>{{71,64},{49,55}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_death6.png</string>
+                        <key>spriteOffset</key>
+                        <string>{3,5}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{50,60}</string>
+                        <key>textureRect</key>
+                        <string>{{108,1},{44,55}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -112,23 +112,7 @@
                         <key>spriteSourceSize</key>
                         <string>{50,52}</string>
                         <key>textureRect</key>
-                        <string>{{1,290},{45,44}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_attack_side5.png</string>
-                        <key>spriteOffset</key>
-                        <string>{0,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{1,336},{39,34}}</string>
+                        <string>{{122,58},{44,45}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -144,7 +128,39 @@
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{42,336},{21,35}}</string>
+                        <string>{{122,105},{35,21}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_down1.png</string>
+                        <key>spriteOffset</key>
+                        <string>{4,4}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{159,105},{34,21}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_up_right5.png</string>
+                        <key>spriteOffset</key>
+                        <string>{0,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{36,38}</string>
+                        <key>textureRect</key>
+                        <string>{{154,1},{35,37}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -154,15 +170,47 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_attack_side3.png</string>
+                        <string>zealot_attack_up_right3.png</string>
                         <key>spriteOffset</key>
-                        <string>{0,2}</string>
+                        <string>{0,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{35,37}</string>
+                        <key>textureRect</key>
+                        <string>{{168,40},{34,35}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_up_right6.png</string>
+                        <key>spriteOffset</key>
+                        <string>{0,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{35,37}</string>
+                        <key>textureRect</key>
+                        <string>{{168,40},{34,35}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_side5.png</string>
+                        <key>spriteOffset</key>
+                        <string>{3,3}</string>
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{1,372},{38,35}}</string>
+                        <string>{{168,77},{34,25}}</string>
                         <key>textureRotated</key>
-                        <false/>
+                        <true/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -176,7 +224,23 @@
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{41,373},{22,34}}</string>
+                        <string>{{195,104},{34,22}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_up_right4.png</string>
+                        <key>spriteOffset</key>
+                        <string>{3,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{35,38}</string>
+                        <key>textureRect</key>
+                        <string>{{191,1},{30,36}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -186,13 +250,29 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_attack_side2.png</string>
+                        <string>zealot_attack_up_right2.png</string>
                         <key>spriteOffset</key>
-                        <string>{1,3}</string>
+                        <string>{1,1}</string>
                         <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
+                        <string>{32,37}</string>
                         <key>textureRect</key>
-                        <string>{{1,409},{37,34}}</string>
+                        <string>{{204,39},{30,34}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_up_right7.png</string>
+                        <key>spriteOffset</key>
+                        <string>{1,1}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{32,37}</string>
+                        <key>textureRect</key>
+                        <string>{{204,39},{30,34}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -208,55 +288,7 @@
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{40,409},{23,35}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_attack_side4.png</string>
-                        <key>spriteOffset</key>
-                        <string>{1,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{1,445},{34,32}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_walk_side5.png</string>
-                        <key>spriteOffset</key>
-                        <string>{3,3}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{37,446},{25,34}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_attack_side1.png</string>
-                        <key>spriteOffset</key>
-                        <string>{2,3}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{1,479},{34,30}}</string>
+                        <string>{{204,75},{35,23}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -272,7 +304,23 @@
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{37,482},{25,32}}</string>
+                        <string>{{231,100},{32,25}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_down_right2.png</string>
+                        <key>spriteOffset</key>
+                        <string>{0,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{30,38}</string>
+                        <key>textureRect</key>
+                        <string>{{223,1},{28,35}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -282,15 +330,31 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_down7.png</string>
+                        <string>zealot_attack_down_right7.png</string>
                         <key>spriteOffset</key>
-                        <string>{1,3}</string>
+                        <string>{0,2}</string>
                         <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
+                        <string>{30,38}</string>
                         <key>textureRect</key>
-                        <string>{{1,511},{34,28}}</string>
+                        <string>{{223,1},{28,35}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_down_right5.png</string>
+                        <key>spriteOffset</key>
+                        <string>{0,1}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{32,35}</string>
+                        <key>textureRect</key>
+                        <string>{{236,38},{31,31}}</string>
+                        <key>textureRotated</key>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -304,23 +368,7 @@
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{37,516},{24,33}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_walk_down2.png</string>
-                        <key>spriteOffset</key>
-                        <string>{4,4}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{1,541},{34,23}}</string>
+                        <string>{{241,71},{33,24}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -330,29 +378,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up2.png</string>
+                        <string>zealot_attack_down_right3.png</string>
                         <key>spriteOffset</key>
-                        <string>{3,5}</string>
+                        <string>{0,2}</string>
                         <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
+                        <string>{32,37}</string>
                         <key>textureRect</key>
-                        <string>{{37,551},{24,33}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_walk_down1.png</string>
-                        <key>spriteOffset</key>
-                        <string>{4,4}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{1,566},{34,21}}</string>
+                        <string>{{265,97},{34,28}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -362,29 +394,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up4.png</string>
+                        <string>zealot_attack_down_right6.png</string>
                         <key>spriteOffset</key>
-                        <string>{3,5}</string>
+                        <string>{0,2}</string>
                         <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
+                        <string>{32,37}</string>
                         <key>textureRect</key>
-                        <string>{{37,586},{24,32}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_walk_side7.png</string>
-                        <key>spriteOffset</key>
-                        <string>{3,3}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{1,589},{34,21}}</string>
+                        <string>{{265,97},{34,28}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -394,93 +410,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_down3.png</string>
+                        <string>zealot_walk_down7.png</string>
                         <key>spriteOffset</key>
-                        <string>{0,5}</string>
+                        <string>{1,3}</string>
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{1,612},{33,28}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_walk_down8.png</string>
-                        <key>spriteOffset</key>
-                        <string>{3,6}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{36,620},{24,31}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_walk_side2.png</string>
-                        <key>spriteOffset</key>
-                        <string>{4,4}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{1,642},{33,23}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_walk_up6.png</string>
-                        <key>spriteOffset</key>
-                        <string>{3,6}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{36,653},{24,31}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_walk_side4.png</string>
-                        <key>spriteOffset</key>
-                        <string>{4,3}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{1,667},{33,23}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>zealot_walk_side6.png</string>
-                        <key>spriteOffset</key>
-                        <string>{3,4}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{39,41}</string>
-                        <key>textureRect</key>
-                        <string>{{36,686},{23,33}}</string>
+                        <string>{{253,1},{28,34}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -496,7 +432,103 @@
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{1,692},{32,29}}</string>
+                        <string>{{269,37},{29,32}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_up2.png</string>
+                        <key>spriteOffset</key>
+                        <string>{3,5}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{276,71},{33,24}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_down_right1.png</string>
+                        <key>spriteOffset</key>
+                        <string>{2,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{31,36}</string>
+                        <key>textureRect</key>
+                        <string>{{301,97},{33,28}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_down_right8.png</string>
+                        <key>spriteOffset</key>
+                        <string>{2,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{31,36}</string>
+                        <key>textureRect</key>
+                        <string>{{301,97},{33,28}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_down3.png</string>
+                        <key>spriteOffset</key>
+                        <string>{0,5}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{283,1},{28,33}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_down_right4.png</string>
+                        <key>spriteOffset</key>
+                        <string>{0,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{31,35}</string>
+                        <key>textureRect</key>
+                        <string>{{300,36},{29,31}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_down2.png</string>
+                        <key>spriteOffset</key>
+                        <string>{4,4}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{311,69},{34,23}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -512,7 +544,119 @@
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{35,721},{28,31}}</string>
+                        <string>{{336,94},{28,31}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_up_right1.png</string>
+                        <key>spriteOffset</key>
+                        <string>{3,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{28,36}</string>
+                        <key>textureRect</key>
+                        <string>{{313,1},{24,32}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_attack_up_right8.png</string>
+                        <key>spriteOffset</key>
+                        <string>{3,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{28,36}</string>
+                        <key>textureRect</key>
+                        <string>{{313,1},{24,32}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_up4.png</string>
+                        <key>spriteOffset</key>
+                        <string>{3,5}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{331,35},{24,32}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_side2.png</string>
+                        <key>spriteOffset</key>
+                        <string>{4,4}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{347,69},{33,23}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_side4.png</string>
+                        <key>spriteOffset</key>
+                        <string>{4,3}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{366,94},{33,23}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_side6.png</string>
+                        <key>spriteOffset</key>
+                        <string>{3,4}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{339,1},{33,23}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_down8.png</string>
+                        <key>spriteOffset</key>
+                        <string>{3,6}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{357,26},{24,31}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -528,7 +672,7 @@
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{1,723},{32,23}}</string>
+                        <string>{{374,1},{32,23}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -538,15 +682,31 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>zealot_walk_up5.png</string>
+                        <string>zealot_walk_up6.png</string>
                         <key>spriteOffset</key>
-                        <string>{5,6}</string>
+                        <string>{3,6}</string>
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{1,748},{32,21}}</string>
+                        <string>{{382,59},{24,31}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_side7.png</string>
+                        <key>spriteOffset</key>
+                        <string>{3,3}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{401,92},{21,34}}</string>
+                        <key>textureRotated</key>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -560,7 +720,23 @@
                         <key>spriteSourceSize</key>
                         <string>{38,41}</string>
                         <key>textureRect</key>
-                        <string>{{35,754},{22,31}}</string>
+                        <string>{{383,26},{22,31}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>zealot_walk_up5.png</string>
+                        <key>spriteOffset</key>
+                        <string>{5,6}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{39,41}</string>
+                        <key>textureRect</key>
+                        <string>{{408,1},{21,32}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -576,9 +752,9 @@
                         <key>spriteSourceSize</key>
                         <string>{39,41}</string>
                         <key>textureRect</key>
-                        <string>{{1,771},{32,20}}</string>
+                        <string>{{408,35},{20,32}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                 </array>
             </dict>

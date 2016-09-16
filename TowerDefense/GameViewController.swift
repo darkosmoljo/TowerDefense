@@ -170,8 +170,6 @@ class GameViewController: UIViewController, UICollectionViewDataSource, UICollec
         let currentLevel: Int = levelOutOfLevels.0
         let allLevels: Int = levelOutOfLevels.1
         
-        print("init11 \(levelOutOfLevels)")
-        
         levelsLabel.text = "\(currentLevel)/\(allLevels)"
     }
     
