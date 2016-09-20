@@ -24,8 +24,7 @@ class TemplarTower: TowerNode {
         
         super.init(texture: texture, color: UIColor.clearColor(), size: texture.size())
         
-        range = RangeNode(circleOfRadius: 120)
-        range?.setTower(self)
+        range = RangeNode(tower: self, range:120)
         
         cooldownDelay = 0.9
         

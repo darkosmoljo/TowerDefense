@@ -24,10 +24,9 @@ class ZealotTower: TowerNode {
         
         super.init(texture: texture, color: UIColor.clearColor(), size: texture.size())
         
-        range = RangeNode(circleOfRadius: 120)
-        range?.setTower(self)
+        range = RangeNode(tower: self, range:120)
         
-        cooldownDelay = 0.7
+        cooldownDelay = 0.55
         
         userInteractionEnabled = true
     }
@@ -49,7 +48,7 @@ class ZealotTower: TowerNode {
     
     override func createBullet() -> Bullet? {
         
-        return PlasmaBullet(bulletDamage: 8, bulletSpeed: 300)
+        return PlasmaBullet(bulletDamage: 9, bulletSpeed: 330)
     }
     
     override func fire(enemy: Enemy) {

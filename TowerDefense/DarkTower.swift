@@ -24,8 +24,7 @@ class DarkTower: TowerNode {
         
         super.init(texture: texture, color: UIColor.clearColor(), size: texture.size())
         
-        range = RangeNode(circleOfRadius: 70)
-        range?.setTower(self)
+        range = RangeNode(tower: self, range:70)
         
         cooldownDelay = 0.5
         

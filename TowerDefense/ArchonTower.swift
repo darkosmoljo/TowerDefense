@@ -24,10 +24,9 @@ class ArchonTower : TowerNode {
         
         super.init(texture: texture, color: UIColor.clearColor(), size: texture.size())
         
-        range = RangeNode(circleOfRadius: 80)
-        range?.setTower(self)
+        range = RangeNode(tower: self, range:80)
         
-        cooldownDelay = 0.9
+        cooldownDelay = 0.8
         
         userInteractionEnabled = true
     }

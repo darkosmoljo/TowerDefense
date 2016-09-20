@@ -33,7 +33,7 @@ class CommandCenter: SKSpriteNode {
         
         super.init(texture: texture, color: UIColor.whiteColor(), size: image.size)
         
-        physicsBody = SKPhysicsBody(rectangleOfSize: image.size)//texture: texture, size: image.size)
+        physicsBody = SKPhysicsBody(rectangleOfSize: image.size)
         physicsBody?.affectedByGravity = false
         physicsBody?.categoryBitMask = CollisionBitMasks.commandCenter
         physicsBody?.collisionBitMask = 0

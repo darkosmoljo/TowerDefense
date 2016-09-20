@@ -11,11 +11,7 @@ import SpriteKit
 
 class RangeNode: SKShapeNode, Range {
     
-    var tower: Tower!
-    
-    func setTower(tower: Tower) {
-        self.tower = tower
-    }
+    var tower: Tower
     
     func getRange() -> CGFloat {
         return frame.width
@@ -25,12 +21,23 @@ class RangeNode: SKShapeNode, Range {
         return self
     }
     
-    override init() {
+    init(tower: Tower, range: Int) {
+        
+        self.tower = tower
+        
         super.init()
         
-        fillColor = UIColor.darkGrayColor()
-        strokeColor = UIColor.blackColor()
-        alpha = 0
+        if let towerNode:SKNode = tower.getNode() {
+            print("imamo node \(towerNode)")
+            let diameter: Int = range * 2
+            let point: CGPoint = CGPoint(x: -range, y: -range)
+            self.path = CGPathCreateWithEllipseInRect(CGRect(origin: point, size: CGSize(width: diameter, height: diameter)), nil)
+            fillColor = UIColor.darkGrayColor()
+            strokeColor = UIColor.blackColor()
+            alpha = 0
+            
+            setupPhysicsBody()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

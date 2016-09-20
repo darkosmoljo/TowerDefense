@@ -15,6 +15,5 @@ protocol Range {
     func getRange() -> CGFloat
     func getNode() -> SKShapeNode
     func getTower() -> Tower
-    func setTower(tower: Tower)
     
 }

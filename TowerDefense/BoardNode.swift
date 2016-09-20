@@ -169,20 +169,20 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
     func putTower(tower: Tower) {
         selectedTile?.setSelected2(false)
         
-        if (selectedTile != nil) {
-            tower.getNode().position = CGPoint(x: selectedTile.getNode().position.x, y: selectedTile.getNode().position.y)
+        if let selectedNode = selectedTile?.getNode() {
+            
+            tower.getNode().position = CGPoint(x: selectedNode.position.x, y: selectedNode.position.y)
             tower.getNode().zPosition = 3
             
             if let range = tower.getRange() {
-                range.getNode().position = CGPoint(x: selectedTile.getNode().position.x, y: selectedTile.getNode().position.y)
+                range.getNode().position = CGPoint(x: selectedNode.position.x, y: selectedNode.position.y)
                 range.getNode().zPosition = 2
+                
                 addChild(range.getNode())
             }
             
             addChild(tower.getNode())
             
-            (tower.getRange() as? RangeNode)?.setupPhysicsBody()
-        
             toggleStateSelected(selectedTile)
         }
     }
