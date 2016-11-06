@@ -46,7 +46,7 @@ class TemplarTower: TowerNode {
         return tower
     }
     
-    override func createBullet() -> Bullet? {
+    override func createBullet() -> Bullet {
         
         return CloudBullet(bulletDamage: 9)
     }

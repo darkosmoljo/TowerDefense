@@ -46,7 +46,7 @@ class ZealotTower: TowerNode {
         return tower
     }
     
-    override func createBullet() -> Bullet? {
+    override func createBullet() -> Bullet {
         
         return PlasmaBullet(bulletDamage: 9, bulletSpeed: 330)
     }
@@ -55,8 +55,8 @@ class ZealotTower: TowerNode {
         super.fire(enemy)
         
         if let enemyNode: SKNode = enemy.getNode() {
-            let currentLocation: CGPoint = CGPoint(x: position.x, y: position.y)
-            let targetLocation: CGPoint = CGPoint(x: enemyNode.position.x, y: enemyNode.position.y)
+            let currentLocation = CGPoint(x: position.x, y: position.y)
+            let targetLocation = CGPoint(x: enemyNode.position.x, y: enemyNode.position.y)
             
             setScale(1)
             
@@ -72,7 +72,7 @@ class ZealotTower: TowerNode {
                 xScale = xScale * (-1)
             }
             
-            let attackAnim: SKAction = SKAction.animateWithTextures(textures, timePerFrame: 0.11)
+            let attackAnim = SKAction.animateWithTextures(textures, timePerFrame: 0.11)
             
             runAction(attackAnim)
         }

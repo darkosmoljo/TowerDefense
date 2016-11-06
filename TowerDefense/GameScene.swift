@@ -37,10 +37,10 @@ class GameScene: SKScene, Scene, UIListener, BoardListener {
         
         self.physicsWorld.contactDelegate = board
         
-        let map: Map = coordinator.startFirstMap()
-        
-        spriteListener.playingLevel((1, map.getLevels().count))
-        spriteListener.playingMap(map.getName())
+        if let map: Map = coordinator.startFirstMap() {
+            spriteListener.playingLevel((1, map.getLevels().count))
+            spriteListener.playingMap(map.getName())
+        }
     }
     
     func setSpriteListener(spriteListener: SpriteListener) {

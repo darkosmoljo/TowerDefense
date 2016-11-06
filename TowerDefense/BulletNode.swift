@@ -37,9 +37,9 @@ class BulletNode: SKSpriteNode, Bullet {
         name = "bullet"
         physicsBody = SKPhysicsBody(circleOfRadius: frame.size.width / 2)
         physicsBody?.affectedByGravity = false
-        physicsBody?.categoryBitMask = CollisionBitMasks.bullet
+        physicsBody?.categoryBitMask = BitMasks.bullet
         physicsBody?.collisionBitMask = 0
-        physicsBody?.contactTestBitMask = CollisionBitMasks.enemy
+        physicsBody?.contactTestBitMask = BitMasks.enemy
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -85,12 +85,12 @@ class BulletNode: SKSpriteNode, Bullet {
             
             if let targetNode: SKNode = target.getNode() {
                 
-                let x: Float = Float(position.x - targetNode.position.x)
-                let y: Float = Float(targetNode.position.y - position.y)
-                let direction: Float = atan2f(x, y) + Float(M_PI_2)
+                let x = Float(position.x - targetNode.position.x)
+                let y = Float(targetNode.position.y - position.y)
+                let direction = atan2f(x, y) + Float(M_PI_2)
                 
-                let velocityX: CGFloat = CGFloat(getSpeed() * cos(direction))
-                let velocityY: CGFloat = CGFloat(getSpeed() * sin(direction))
+                let velocityX = CGFloat(getSpeed() * cos(direction))
+                let velocityY = CGFloat(getSpeed() * sin(direction))
                 
                 let newVelocity = CGVectorMake(velocityX, velocityY)
                 

@@ -72,6 +72,18 @@
 		E7E109521D880D6100BB94BC /* MeleeAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E109511D880D6100BB94BC /* MeleeAttack.swift */; };
 		E7E109541D880F7D00BB94BC /* BulletNodeShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E109531D880F7D00BB94BC /* BulletNodeShape.swift */; };
 		E7E109561D883E3100BB94BC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E109551D883E3100BB94BC /* Utils.swift */; };
+		E7FB2D5F1DCF5885000427E7 /* Civilian.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7FB2D5E1DCF5885000427E7 /* Civilian.atlasc */; };
+		E7FB2D611DCF5891000427E7 /* Civilian.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB2D601DCF5891000427E7 /* Civilian.swift */; };
+		E7FB2D631DCF58D3000427E7 /* CivilianEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB2D621DCF58D3000427E7 /* CivilianEnemy.swift */; };
+		E7FB2D651DCF5A42000427E7 /* CivilianLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB2D641DCF5A42000427E7 /* CivilianLevel.swift */; };
+		E7FB2D671DCFD7C2000427E7 /* Infestor.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7FB2D661DCFD7C2000427E7 /* Infestor.atlasc */; };
+		E7FB2D691DCFD7D7000427E7 /* Infestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB2D681DCFD7D7000427E7 /* Infestor.swift */; };
+		E7FB2D6B1DCFD7E7000427E7 /* InfestorEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB2D6A1DCFD7E7000427E7 /* InfestorEnemy.swift */; };
+		E7FB2D6D1DCFD8D8000427E7 /* InfestorLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB2D6C1DCFD8D8000427E7 /* InfestorLevel.swift */; };
+		E7FB2D6F1DCFE3F5000427E7 /* scourge.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7FB2D6E1DCFE3F5000427E7 /* scourge.atlasc */; };
+		E7FB2D711DCFE3FD000427E7 /* Scourge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB2D701DCFE3FD000427E7 /* Scourge.swift */; };
+		E7FB2D731DCFE414000427E7 /* ScourgeEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB2D721DCFE414000427E7 /* ScourgeEnemy.swift */; };
+		E7FB2D751DCFE4C0000427E7 /* ScourgeLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB2D741DCFE4C0000427E7 /* ScourgeLevel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +175,18 @@
 		E7E109511D880D6100BB94BC /* MeleeAttack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeleeAttack.swift; sourceTree = "<group>"; };
 		E7E109531D880F7D00BB94BC /* BulletNodeShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletNodeShape.swift; sourceTree = "<group>"; };
 		E7E109551D883E3100BB94BC /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E7FB2D5E1DCF5885000427E7 /* Civilian.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Civilian.atlasc; sourceTree = "<group>"; };
+		E7FB2D601DCF5891000427E7 /* Civilian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Civilian.swift; sourceTree = "<group>"; };
+		E7FB2D621DCF58D3000427E7 /* CivilianEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivilianEnemy.swift; sourceTree = "<group>"; };
+		E7FB2D641DCF5A42000427E7 /* CivilianLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivilianLevel.swift; sourceTree = "<group>"; };
+		E7FB2D661DCFD7C2000427E7 /* Infestor.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Infestor.atlasc; sourceTree = "<group>"; };
+		E7FB2D681DCFD7D7000427E7 /* Infestor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Infestor.swift; sourceTree = "<group>"; };
+		E7FB2D6A1DCFD7E7000427E7 /* InfestorEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfestorEnemy.swift; sourceTree = "<group>"; };
+		E7FB2D6C1DCFD8D8000427E7 /* InfestorLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfestorLevel.swift; sourceTree = "<group>"; };
+		E7FB2D6E1DCFE3F5000427E7 /* scourge.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scourge.atlasc; sourceTree = "<group>"; };
+		E7FB2D701DCFE3FD000427E7 /* Scourge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scourge.swift; sourceTree = "<group>"; };
+		E7FB2D721DCFE414000427E7 /* ScourgeEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScourgeEnemy.swift; sourceTree = "<group>"; };
+		E7FB2D741DCFE4C0000427E7 /* ScourgeLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScourgeLevel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +219,9 @@
 			children = (
 				E71F5B6F1CF101E7004CE2F2 /* ZealotEnemy.swift */,
 				E70498011D7E2500000F60E1 /* HydraEnemy.swift */,
+				E7FB2D621DCF58D3000427E7 /* CivilianEnemy.swift */,
+				E7FB2D6A1DCFD7E7000427E7 /* InfestorEnemy.swift */,
+				E7FB2D721DCFE414000427E7 /* ScourgeEnemy.swift */,
 			);
 			name = Enemies;
 			sourceTree = "<group>";
@@ -205,6 +232,9 @@
 				E71F5B721CF120A3004CE2F2 /* ZealotsLevel.swift */,
 				E70497FF1D7E24C8000F60E1 /* HydrasLevel.swift */,
 				E70498031D7F683C000F60E1 /* MixedLevel1.swift */,
+				E7FB2D641DCF5A42000427E7 /* CivilianLevel.swift */,
+				E7FB2D6C1DCFD8D8000427E7 /* InfestorLevel.swift */,
+				E7FB2D741DCFE4C0000427E7 /* ScourgeLevel.swift */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -234,6 +264,9 @@
 		E73F79A91CEA2568008CD865 /* SwiftSprites */ = {
 			isa = PBXGroup;
 			children = (
+				E7FB2D701DCFE3FD000427E7 /* Scourge.swift */,
+				E7FB2D681DCFD7D7000427E7 /* Infestor.swift */,
+				E7FB2D601DCF5891000427E7 /* Civilian.swift */,
 				E7E1094D1D880BA700BB94BC /* Dark.swift */,
 				E7E109451D8765FF00BB94BC /* Templar.swift */,
 				E7E109411D874CBF00BB94BC /* Cloud.swift */,
@@ -249,6 +282,9 @@
 		E774C60E1CEA5F2600FF3892 /* Atlas */ = {
 			isa = PBXGroup;
 			children = (
+				E7FB2D6E1DCFE3F5000427E7 /* scourge.atlasc */,
+				E7FB2D661DCFD7C2000427E7 /* Infestor.atlasc */,
+				E7FB2D5E1DCF5885000427E7 /* Civilian.atlasc */,
 				E7E1094B1D880B9800BB94BC /* Dark.atlasc */,
 				E7E109431D8765F600BB94BC /* Templar.atlasc */,
 				E7E1093F1D874CB500BB94BC /* Cloud.atlasc */,
@@ -504,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E774C60D1CEA5F1B00FF3892 /* Zealot.atlasc in Resources */,
+				E7FB2D5F1DCF5885000427E7 /* Civilian.atlasc in Resources */,
 				E7E109441D8765F600BB94BC /* Templar.atlasc in Resources */,
 				E774C60C1CEA5F1B00FF3892 /* Archon.atlasc in Resources */,
 				E70497FC1D7E2144000F60E1 /* Hydra.atlasc in Resources */,
@@ -511,6 +548,8 @@
 				E7CCA3921C343A8400B27EC0 /* GameScene.sks in Resources */,
 				E7CCA39E1C343A8400B27EC0 /* LaunchScreen.storyboard in Resources */,
 				E7E1094C1D880B9800BB94BC /* Dark.atlasc in Resources */,
+				E7FB2D671DCFD7C2000427E7 /* Infestor.atlasc in Resources */,
+				E7FB2D6F1DCFE3F5000427E7 /* scourge.atlasc in Resources */,
 				E7960D221D81AD280018531B /* Storm.atlasc in Resources */,
 				E7E109401D874CB500BB94BC /* Cloud.atlasc in Resources */,
 				E7CCA39B1C343A8400B27EC0 /* Assets.xcassets in Resources */,
@@ -541,14 +580,17 @@
 			files = (
 				E7CCA3E21C348B4100B27EC0 /* Map.swift in Sources */,
 				E7E109461D8765FF00BB94BC /* Templar.swift in Sources */,
+				E7FB2D631DCF58D3000427E7 /* CivilianEnemy.swift in Sources */,
 				E7B448191CF61B0D00FA4342 /* RangeNode.swift in Sources */,
 				E7471F5B1CE67DCD004B22AC /* Tile.swift in Sources */,
 				E7960D241D81AD380018531B /* Storm.swift in Sources */,
+				E7FB2D6B1DCFD7E7000427E7 /* InfestorEnemy.swift in Sources */,
 				E7E109421D874CBF00BB94BC /* Cloud.swift in Sources */,
 				E73F79A31CE9FC47008CD865 /* ArchonTower.swift in Sources */,
 				E70498041D7F683C000F60E1 /* MixedLevel1.swift in Sources */,
 				E7CCA3941C343A8400B27EC0 /* GameScene.swift in Sources */,
 				E7B48E7B1CF38DF300F8C5EC /* CommandCenter.swift in Sources */,
+				E7FB2D6D1DCFD8D8000427E7 /* InfestorLevel.swift in Sources */,
 				E7CCA3E41C348C0A00B27EC0 /* GrassMap.swift in Sources */,
 				E7CCA3961C343A8400B27EC0 /* GameViewController.swift in Sources */,
 				E71F5B701CF101E7004CE2F2 /* ZealotEnemy.swift in Sources */,
@@ -557,17 +599,22 @@
 				E7E1094A1D87E7A400BB94BC /* ZealotTower.swift in Sources */,
 				E71F5B731CF120A3004CE2F2 /* ZealotsLevel.swift in Sources */,
 				E73F79A81CEA255F008CD865 /* Zealot.swift in Sources */,
+				E7FB2D751DCFE4C0000427E7 /* ScourgeLevel.swift in Sources */,
+				E7FB2D651DCF5A42000427E7 /* CivilianLevel.swift in Sources */,
 				E7B448221CF6455000FA4342 /* PlasmaBullet.swift in Sources */,
 				E70498021D7E2500000F60E1 /* HydraEnemy.swift in Sources */,
+				E7FB2D611DCF5891000427E7 /* Civilian.swift in Sources */,
 				E7B48E7D1CF39AE500F8C5EC /* CollisionBitMasks.swift in Sources */,
 				E7CCA3C61C3441D700B27EC0 /* BoardNode.swift in Sources */,
 				E70773E91CE7856600C9DC93 /* Board.swift in Sources */,
 				E7DCE9D91CEA4C34006F4BCA /* PortraitViewCell.swift in Sources */,
+				E7FB2D691DCFD7D7000427E7 /* Infestor.swift in Sources */,
 				E73F799F1CE9DAE9008CD865 /* Tower.swift in Sources */,
 				E7CCA3D91C3483DB00B27EC0 /* GameCoordinator.swift in Sources */,
 				E7E109561D883E3100BB94BC /* Utils.swift in Sources */,
 				E7B448131CF5FECA00FA4342 /* EnemyNode.swift in Sources */,
 				E70498061D7F7F3D000F60E1 /* UIOutlinedLabel.swift in Sources */,
+				E7FB2D731DCFE414000427E7 /* ScourgeEnemy.swift in Sources */,
 				E7E109481D87660F00BB94BC /* TemplarTower.swift in Sources */,
 				E7B448241CF6462100FA4342 /* Plasma.swift in Sources */,
 				E7CCA3D61C346DAD00B27EC0 /* DefaultTile.swift in Sources */,
@@ -577,6 +624,7 @@
 				E7B448171CF61AE500FA4342 /* Range.swift in Sources */,
 				E73F79A11CE9E8C6008CD865 /* Scene.swift in Sources */,
 				E7CCA3DE1C34883900B27EC0 /* Enemy.swift in Sources */,
+				E7FB2D711DCFE3FD000427E7 /* Scourge.swift in Sources */,
 				E7CCA3901C343A8400B27EC0 /* AppDelegate.swift in Sources */,
 				E7CCA3DB1C34875700B27EC0 /* Level.swift in Sources */,
 				E7E109541D880F7D00BB94BC /* BulletNodeShape.swift in Sources */,

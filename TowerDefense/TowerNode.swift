@@ -11,7 +11,7 @@ import SpriteKit
 
 class TowerNode: SKSpriteNode, Tower {
 
-    var bullet: Bullet!
+    var bullet: Bullet? = nil
     var enemiesInRange: [Enemy] = []
     var range: Range? = nil
     var cooldown: Bool = false
@@ -129,7 +129,7 @@ class TowerNode: SKSpriteNode, Tower {
         })
     }
     
-    func createBullet() -> Bullet? {
+    func createBullet() -> Bullet {
         return BulletNode()
     }
     

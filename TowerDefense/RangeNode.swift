@@ -28,7 +28,6 @@ class RangeNode: SKShapeNode, Range {
         super.init()
         
         if let towerNode:SKNode = tower.getNode() {
-            print("imamo node \(towerNode)")
             let diameter: Int = range * 2
             let point: CGPoint = CGPoint(x: -range, y: -range)
             self.path = CGPathCreateWithEllipseInRect(CGRect(origin: point, size: CGSize(width: diameter, height: diameter)), nil)
@@ -47,9 +46,9 @@ class RangeNode: SKShapeNode, Range {
     func setupPhysicsBody() {
         physicsBody = SKPhysicsBody(circleOfRadius: frame.size.width / 2)
         physicsBody?.affectedByGravity = false
-        physicsBody?.categoryBitMask = CollisionBitMasks.range
+        physicsBody?.categoryBitMask = BitMasks.range
         physicsBody?.collisionBitMask = 0
-        physicsBody?.contactTestBitMask = CollisionBitMasks.enemy
+        physicsBody?.contactTestBitMask = BitMasks.enemy
     }
     
     func getTower() -> Tower {

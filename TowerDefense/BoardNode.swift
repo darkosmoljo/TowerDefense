@@ -105,6 +105,9 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
                 index = index + 1
             }
         }
+        
+        print(maxCols)
+        print(maxRows)
     }
     
     func toggleStateSelected(tile: Tile) {
@@ -257,32 +260,32 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
     
     public func didBeginContact(contact: SKPhysicsContact) {
         
-        if (contact.bodyB.categoryBitMask == CollisionBitMasks.commandCenter) {
-            print("b: command center")
-        }
+//        if (contact.bodyB.categoryBitMask == BitMasks.commandCenter) {
+//            print("b: command center")
+//        }
+//        
+//        if (contact.bodyA.categoryBitMask == BitMasks.range) {
+//            print("a: range")
+//        }
+//        
+//        if (contact.bodyB.categoryBitMask == BitMasks.bullet) {
+//            print("b: bullet")
+//        }
+//        
+//        if (contact.bodyA.categoryBitMask == BitMasks.bullet) {
+//            print("a: bullet")
+//        }
+//        
+//        if (contact.bodyA.categoryBitMask == BitMasks.enemy) {
+//            print("a: enemy")
+//        }
         
-        if (contact.bodyA.categoryBitMask == CollisionBitMasks.range) {
-            print("a: range")
-        }
-        
-        if (contact.bodyB.categoryBitMask == CollisionBitMasks.bullet) {
-            print("b: bullet")
-        }
-        
-        if (contact.bodyA.categoryBitMask == CollisionBitMasks.bullet) {
-            print("a: bullet")
-        }
-        
-        if (contact.bodyA.categoryBitMask == CollisionBitMasks.enemy) {
-            print("a: enemy")
-        }
-        
-        if (contact.bodyA.categoryBitMask == CollisionBitMasks.commandCenter &&
-            contact.bodyB.categoryBitMask == CollisionBitMasks.enemy) {
+        if (contact.bodyA.categoryBitMask == BitMasks.commandCenter &&
+            contact.bodyB.categoryBitMask == BitMasks.enemy) {
             
-            if let enemy: Enemy = contact.bodyB.node as? Enemy {
+            if let enemy = contact.bodyB.node as? Enemy {
                 
-                if let cc: CommandCenter = contact.bodyA.node as? CommandCenter {
+                if let cc = contact.bodyA.node as? CommandCenter {
                 
                     cc.enemyAttack(enemy.damage())
                     removeEnemy(enemy, killed: false)
@@ -290,28 +293,26 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
             }
         }
         
-        if (contact.bodyA.categoryBitMask == CollisionBitMasks.enemy &&
-            contact.bodyB.categoryBitMask == CollisionBitMasks.range) {
+        if (contact.bodyA.categoryBitMask == BitMasks.enemy &&
+            contact.bodyB.categoryBitMask == BitMasks.range) {
             
-            if let enemy: Enemy = contact.bodyA.node as? Enemy {
+            if let enemy = contact.bodyA.node as? Enemy {
                 
-                if let range: Range = contact.bodyB.node as? Range {
-                
-                    let tower: Tower = range.getTower()
-            
-                    tower.didEnterRegion(enemy)
+                if let range = contact.bodyB.node as? Range {
+                    
+                    range.getTower().didEnterRegion(enemy)
                 }
             }
         }
         
-        if (contact.bodyA.categoryBitMask == CollisionBitMasks.enemy &&
-            contact.bodyB.categoryBitMask == CollisionBitMasks.bullet) {
+        if (contact.bodyA.categoryBitMask == BitMasks.enemy &&
+            contact.bodyB.categoryBitMask == BitMasks.bullet) {
             
-            if let bullet: Bullet = contact.bodyB.node as? Bullet {
+            if let bullet = contact.bodyB.node as? Bullet {
                 
-                if let enemy: Enemy = contact.bodyA.node as? Enemy {
+                if let enemy = contact.bodyA.node as? Enemy {
                 
-                    if enemy.getHealth() > 0 && (bullet.isAOE() || enemy.getId() == bullet.getTarget()?.getId()) {
+                    if isTarget(enemy, bullet: bullet) {
                         
                         enemy.takeDamage(bullet.getDamage())
                         bullet.explode()
@@ -325,11 +326,16 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
         }
     }
     
+    private func isTarget(enemy: Enemy, bullet: Bullet) -> Bool {
+        return enemy.getHealth() > 0 && (bullet.isAOE() ||
+            enemy.getId() == bullet.getTarget()?.getId())
+    }
+    
     public func didEndContact(contact: SKPhysicsContact) {
-        if (contact.bodyA.categoryBitMask == CollisionBitMasks.enemy &&
-            contact.bodyB.categoryBitMask == CollisionBitMasks.range) {
+        if (contact.bodyA.categoryBitMask == BitMasks.enemy &&
+            contact.bodyB.categoryBitMask == BitMasks.range) {
             
-            if let enemy: Enemy = contact.bodyA.node as? Enemy {
+            if let enemy = contact.bodyA.node as? Enemy {
                 
                 if let range = contact.bodyB.node as? Range {
                     

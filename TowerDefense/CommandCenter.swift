@@ -35,9 +35,9 @@ class CommandCenter: SKSpriteNode {
         
         physicsBody = SKPhysicsBody(rectangleOfSize: image.size)
         physicsBody?.affectedByGravity = false
-        physicsBody?.categoryBitMask = CollisionBitMasks.commandCenter
+        physicsBody?.categoryBitMask = BitMasks.commandCenter
         physicsBody?.collisionBitMask = 0
-        physicsBody?.contactTestBitMask = CollisionBitMasks.enemy
+        physicsBody?.contactTestBitMask = BitMasks.enemy
     }
     
     required init?(coder aDecoder: NSCoder) {

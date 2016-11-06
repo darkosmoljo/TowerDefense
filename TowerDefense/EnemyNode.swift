@@ -44,9 +44,9 @@ class EnemyNode : SKSpriteNode, Enemy {
         
         physicsBody = SKPhysicsBody(rectangleOfSize: thirdSize)
         physicsBody?.affectedByGravity = false
-        physicsBody?.categoryBitMask = CollisionBitMasks.enemy
+        physicsBody?.categoryBitMask = BitMasks.enemy
         physicsBody?.collisionBitMask = 0
-        physicsBody?.contactTestBitMask = CollisionBitMasks.bullet | CollisionBitMasks.commandCenter
+        physicsBody?.contactTestBitMask = BitMasks.bullet | BitMasks.commandCenter
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -88,10 +88,10 @@ class EnemyNode : SKSpriteNode, Enemy {
     private func goto(nextLocation: CGPoint) {
         removeAllActions()
         
-        let currentLocation: CGPoint = CGPoint(x: position.x, y: position.y)
+        let currentLocation = CGPoint(x: position.x, y: position.y)
         
-        let nextPoint: CGPoint = CGPoint(x: nextLocation.x, y: nextLocation.y)
-        let speed: Double = calculateSpeed(nextPoint)
+        let nextPoint = CGPoint(x: nextLocation.x, y: nextLocation.y)
+        let speed = calculateSpeed(nextPoint)
         
         if let animation: [SKTexture] = getAnimation(currentLocation, nextPoint: nextPoint) {
             let walkAnim: SKAction = SKAction.animateWithTextures(animation, timePerFrame: 0.1)

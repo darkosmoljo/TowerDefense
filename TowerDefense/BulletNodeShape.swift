@@ -30,9 +30,9 @@ class BulletNodeShape: SKShapeNode, Bullet {
         
         physicsBody = SKPhysicsBody(circleOfRadius: frame.size.width / 2)
         physicsBody?.affectedByGravity = false
-        physicsBody?.categoryBitMask = CollisionBitMasks.bullet
+        physicsBody?.categoryBitMask = BitMasks.bullet
         physicsBody?.collisionBitMask = 0
-        physicsBody?.contactTestBitMask = CollisionBitMasks.enemy
+        physicsBody?.contactTestBitMask = BitMasks.enemy
     }
     
     func getSpeed() -> Float {

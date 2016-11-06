@@ -46,7 +46,7 @@ class ArchonTower : TowerNode {
         return tower
     }
     
-    override func createBullet() -> Bullet? {
+    override func createBullet() -> Bullet {
         
         return StormBullet(bulletDamage: 12)
     }

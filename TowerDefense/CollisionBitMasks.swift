@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CollisionBitMasks {
+class BitMasks {
     static let enemy: UInt32 = 0x1 << 0
     static let commandCenter: UInt32 = 0x1 << 1
     static let bullet: UInt32 = 0x1 << 2

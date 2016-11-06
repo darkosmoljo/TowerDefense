@@ -46,9 +46,9 @@ class DarkTower: TowerNode {
         return tower
     }
     
-    override func createBullet() -> Bullet? {
+    override func createBullet() -> Bullet {
         
-        let bullet: BulletNodeShape = MeleeAttack(bulletDamage: 40, bulletSpeed: 0)
+        let bullet: BulletNodeShape = MeleeAttack(bulletDamage: 50, bulletSpeed: 0)
         
         return bullet
     }
