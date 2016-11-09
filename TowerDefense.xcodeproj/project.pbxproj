@@ -41,6 +41,34 @@
 		E7B448261CF657FD00FA4342 /* Plasma.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7B448251CF657FD00FA4342 /* Plasma.atlasc */; };
 		E7B48E7B1CF38DF300F8C5EC /* CommandCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B48E7A1CF38DF300F8C5EC /* CommandCenter.swift */; };
 		E7B48E7D1CF39AE500F8C5EC /* CollisionBitMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B48E7C1CF39AE500F8C5EC /* CollisionBitMasks.swift */; };
+		E7C0F7951DD0DA2F00F81522 /* Ultralisk.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7C0F7941DD0DA2F00F81522 /* Ultralisk.atlasc */; };
+		E7C0F7971DD0DA3D00F81522 /* Ultralisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7961DD0DA3D00F81522 /* Ultralisk.swift */; };
+		E7C0F79B1DD0DB8500F81522 /* UltraliskLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F79A1DD0DB8500F81522 /* UltraliskLevel.swift */; };
+		E7C0F79D1DD0F56500F81522 /* UltraliskEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F79C1DD0F56500F81522 /* UltraliskEnemy.swift */; };
+		E7C0F79F1DD21BD600F81522 /* Zergling.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7C0F79E1DD21BD600F81522 /* Zergling.atlasc */; };
+		E7C0F7A11DD21BE300F81522 /* Zergling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7A01DD21BE300F81522 /* Zergling.swift */; };
+		E7C0F7A31DD21C2500F81522 /* ZerglingEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7A21DD21C2500F81522 /* ZerglingEnemy.swift */; };
+		E7C0F7A51DD21C9300F81522 /* ZerglingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7A41DD21C9300F81522 /* ZerglingLevel.swift */; };
+		E7C0F7A71DD221F200F81522 /* Guardian.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7C0F7A61DD221F200F81522 /* Guardian.atlasc */; };
+		E7C0F7A91DD221FC00F81522 /* Guardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7A81DD221FC00F81522 /* Guardian.swift */; };
+		E7C0F7AB1DD2220C00F81522 /* GuardianEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7AA1DD2220C00F81522 /* GuardianEnemy.swift */; };
+		E7C0F7AD1DD2227300F81522 /* GuardianLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7AC1DD2227300F81522 /* GuardianLevel.swift */; };
+		E7C0F7AF1DD22D4300F81522 /* Defiler.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7C0F7AE1DD22D4300F81522 /* Defiler.atlasc */; };
+		E7C0F7B11DD22D4E00F81522 /* Defiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7B01DD22D4E00F81522 /* Defiler.swift */; };
+		E7C0F7B31DD22D5E00F81522 /* DefilerEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7B21DD22D5E00F81522 /* DefilerEnemy.swift */; };
+		E7C0F7B51DD22E1C00F81522 /* DefilerLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7B41DD22E1C00F81522 /* DefilerLevel.swift */; };
+		E7C0F7B71DD23C9D00F81522 /* Mutalisk.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7C0F7B61DD23C9D00F81522 /* Mutalisk.atlasc */; };
+		E7C0F7B91DD23CA600F81522 /* Mutalisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7B81DD23CA600F81522 /* Mutalisk.swift */; };
+		E7C0F7BB1DD23CB300F81522 /* MutaliskEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7BA1DD23CB300F81522 /* MutaliskEnemy.swift */; };
+		E7C0F7BD1DD23D0E00F81522 /* MutaliskLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7BC1DD23D0E00F81522 /* MutaliskLevel.swift */; };
+		E7C0F7BF1DD2407600F81522 /* Lurker.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7C0F7BE1DD2407600F81522 /* Lurker.atlasc */; };
+		E7C0F7C11DD2407F00F81522 /* Lurker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7C01DD2407F00F81522 /* Lurker.swift */; };
+		E7C0F7C31DD2408D00F81522 /* LurkerEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7C21DD2408D00F81522 /* LurkerEnemy.swift */; };
+		E7C0F7C51DD240D800F81522 /* LurkerLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7C41DD240D800F81522 /* LurkerLevel.swift */; };
+		E7C0F7C71DD244AA00F81522 /* Kerrigan.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7C0F7C61DD244AA00F81522 /* Kerrigan.atlasc */; };
+		E7C0F7C91DD244B300F81522 /* Kerrigan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7C81DD244B300F81522 /* Kerrigan.swift */; };
+		E7C0F7CB1DD244BF00F81522 /* KerriganEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7CA1DD244BF00F81522 /* KerriganEnemy.swift */; };
+		E7C0F7CD1DD2451300F81522 /* KerriganLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0F7CC1DD2451300F81522 /* KerriganLevel.swift */; };
 		E7CCA3901C343A8400B27EC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA38F1C343A8400B27EC0 /* AppDelegate.swift */; };
 		E7CCA3921C343A8400B27EC0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7CCA3911C343A8400B27EC0 /* GameScene.sks */; };
 		E7CCA3941C343A8400B27EC0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCA3931C343A8400B27EC0 /* GameScene.swift */; };
@@ -138,6 +166,34 @@
 		E7B448251CF657FD00FA4342 /* Plasma.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plasma.atlasc; sourceTree = "<group>"; };
 		E7B48E7A1CF38DF300F8C5EC /* CommandCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandCenter.swift; sourceTree = "<group>"; };
 		E7B48E7C1CF39AE500F8C5EC /* CollisionBitMasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionBitMasks.swift; sourceTree = "<group>"; };
+		E7C0F7941DD0DA2F00F81522 /* Ultralisk.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Ultralisk.atlasc; sourceTree = "<group>"; };
+		E7C0F7961DD0DA3D00F81522 /* Ultralisk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ultralisk.swift; sourceTree = "<group>"; };
+		E7C0F79A1DD0DB8500F81522 /* UltraliskLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UltraliskLevel.swift; sourceTree = "<group>"; };
+		E7C0F79C1DD0F56500F81522 /* UltraliskEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UltraliskEnemy.swift; sourceTree = "<group>"; };
+		E7C0F79E1DD21BD600F81522 /* Zergling.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Zergling.atlasc; sourceTree = "<group>"; };
+		E7C0F7A01DD21BE300F81522 /* Zergling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zergling.swift; sourceTree = "<group>"; };
+		E7C0F7A21DD21C2500F81522 /* ZerglingEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZerglingEnemy.swift; sourceTree = "<group>"; };
+		E7C0F7A41DD21C9300F81522 /* ZerglingLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZerglingLevel.swift; sourceTree = "<group>"; };
+		E7C0F7A61DD221F200F81522 /* Guardian.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Guardian.atlasc; sourceTree = "<group>"; };
+		E7C0F7A81DD221FC00F81522 /* Guardian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guardian.swift; sourceTree = "<group>"; };
+		E7C0F7AA1DD2220C00F81522 /* GuardianEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardianEnemy.swift; sourceTree = "<group>"; };
+		E7C0F7AC1DD2227300F81522 /* GuardianLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardianLevel.swift; sourceTree = "<group>"; };
+		E7C0F7AE1DD22D4300F81522 /* Defiler.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Defiler.atlasc; sourceTree = "<group>"; };
+		E7C0F7B01DD22D4E00F81522 /* Defiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defiler.swift; sourceTree = "<group>"; };
+		E7C0F7B21DD22D5E00F81522 /* DefilerEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefilerEnemy.swift; sourceTree = "<group>"; };
+		E7C0F7B41DD22E1C00F81522 /* DefilerLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefilerLevel.swift; sourceTree = "<group>"; };
+		E7C0F7B61DD23C9D00F81522 /* Mutalisk.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Mutalisk.atlasc; sourceTree = "<group>"; };
+		E7C0F7B81DD23CA600F81522 /* Mutalisk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutalisk.swift; sourceTree = "<group>"; };
+		E7C0F7BA1DD23CB300F81522 /* MutaliskEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutaliskEnemy.swift; sourceTree = "<group>"; };
+		E7C0F7BC1DD23D0E00F81522 /* MutaliskLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutaliskLevel.swift; sourceTree = "<group>"; };
+		E7C0F7BE1DD2407600F81522 /* Lurker.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lurker.atlasc; sourceTree = "<group>"; };
+		E7C0F7C01DD2407F00F81522 /* Lurker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lurker.swift; sourceTree = "<group>"; };
+		E7C0F7C21DD2408D00F81522 /* LurkerEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LurkerEnemy.swift; sourceTree = "<group>"; };
+		E7C0F7C41DD240D800F81522 /* LurkerLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LurkerLevel.swift; sourceTree = "<group>"; };
+		E7C0F7C61DD244AA00F81522 /* Kerrigan.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Kerrigan.atlasc; sourceTree = "<group>"; };
+		E7C0F7C81DD244B300F81522 /* Kerrigan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kerrigan.swift; sourceTree = "<group>"; };
+		E7C0F7CA1DD244BF00F81522 /* KerriganEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KerriganEnemy.swift; sourceTree = "<group>"; };
+		E7C0F7CC1DD2451300F81522 /* KerriganLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KerriganLevel.swift; sourceTree = "<group>"; };
 		E7CCA38C1C343A8400B27EC0 /* TowerDefense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TowerDefense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CCA38F1C343A8400B27EC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7CCA3911C343A8400B27EC0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -217,11 +273,18 @@
 		E71F5B6E1CF101CE004CE2F2 /* Enemies */ = {
 			isa = PBXGroup;
 			children = (
+				E7C0F79C1DD0F56500F81522 /* UltraliskEnemy.swift */,
 				E71F5B6F1CF101E7004CE2F2 /* ZealotEnemy.swift */,
 				E70498011D7E2500000F60E1 /* HydraEnemy.swift */,
 				E7FB2D621DCF58D3000427E7 /* CivilianEnemy.swift */,
 				E7FB2D6A1DCFD7E7000427E7 /* InfestorEnemy.swift */,
 				E7FB2D721DCFE414000427E7 /* ScourgeEnemy.swift */,
+				E7C0F7A21DD21C2500F81522 /* ZerglingEnemy.swift */,
+				E7C0F7AA1DD2220C00F81522 /* GuardianEnemy.swift */,
+				E7C0F7B21DD22D5E00F81522 /* DefilerEnemy.swift */,
+				E7C0F7BA1DD23CB300F81522 /* MutaliskEnemy.swift */,
+				E7C0F7C21DD2408D00F81522 /* LurkerEnemy.swift */,
+				E7C0F7CA1DD244BF00F81522 /* KerriganEnemy.swift */,
 			);
 			name = Enemies;
 			sourceTree = "<group>";
@@ -235,6 +298,13 @@
 				E7FB2D641DCF5A42000427E7 /* CivilianLevel.swift */,
 				E7FB2D6C1DCFD8D8000427E7 /* InfestorLevel.swift */,
 				E7FB2D741DCFE4C0000427E7 /* ScourgeLevel.swift */,
+				E7C0F79A1DD0DB8500F81522 /* UltraliskLevel.swift */,
+				E7C0F7A41DD21C9300F81522 /* ZerglingLevel.swift */,
+				E7C0F7AC1DD2227300F81522 /* GuardianLevel.swift */,
+				E7C0F7B41DD22E1C00F81522 /* DefilerLevel.swift */,
+				E7C0F7BC1DD23D0E00F81522 /* MutaliskLevel.swift */,
+				E7C0F7C41DD240D800F81522 /* LurkerLevel.swift */,
+				E7C0F7CC1DD2451300F81522 /* KerriganLevel.swift */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -264,6 +334,13 @@
 		E73F79A91CEA2568008CD865 /* SwiftSprites */ = {
 			isa = PBXGroup;
 			children = (
+				E7C0F7C81DD244B300F81522 /* Kerrigan.swift */,
+				E7C0F7C01DD2407F00F81522 /* Lurker.swift */,
+				E7C0F7B81DD23CA600F81522 /* Mutalisk.swift */,
+				E7C0F7B01DD22D4E00F81522 /* Defiler.swift */,
+				E7C0F7A81DD221FC00F81522 /* Guardian.swift */,
+				E7C0F7A01DD21BE300F81522 /* Zergling.swift */,
+				E7C0F7961DD0DA3D00F81522 /* Ultralisk.swift */,
 				E7FB2D701DCFE3FD000427E7 /* Scourge.swift */,
 				E7FB2D681DCFD7D7000427E7 /* Infestor.swift */,
 				E7FB2D601DCF5891000427E7 /* Civilian.swift */,
@@ -282,6 +359,13 @@
 		E774C60E1CEA5F2600FF3892 /* Atlas */ = {
 			isa = PBXGroup;
 			children = (
+				E7C0F7C61DD244AA00F81522 /* Kerrigan.atlasc */,
+				E7C0F7BE1DD2407600F81522 /* Lurker.atlasc */,
+				E7C0F7B61DD23C9D00F81522 /* Mutalisk.atlasc */,
+				E7C0F7AE1DD22D4300F81522 /* Defiler.atlasc */,
+				E7C0F7A61DD221F200F81522 /* Guardian.atlasc */,
+				E7C0F79E1DD21BD600F81522 /* Zergling.atlasc */,
+				E7C0F7941DD0DA2F00F81522 /* Ultralisk.atlasc */,
 				E7FB2D6E1DCFE3F5000427E7 /* scourge.atlasc */,
 				E7FB2D661DCFD7C2000427E7 /* Infestor.atlasc */,
 				E7FB2D5E1DCF5885000427E7 /* Civilian.atlasc */,
@@ -539,18 +623,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C0F7AF1DD22D4300F81522 /* Defiler.atlasc in Resources */,
 				E774C60D1CEA5F1B00FF3892 /* Zealot.atlasc in Resources */,
+				E7C0F7951DD0DA2F00F81522 /* Ultralisk.atlasc in Resources */,
 				E7FB2D5F1DCF5885000427E7 /* Civilian.atlasc in Resources */,
 				E7E109441D8765F600BB94BC /* Templar.atlasc in Resources */,
 				E774C60C1CEA5F1B00FF3892 /* Archon.atlasc in Resources */,
 				E70497FC1D7E2144000F60E1 /* Hydra.atlasc in Resources */,
 				E7B448261CF657FD00FA4342 /* Plasma.atlasc in Resources */,
 				E7CCA3921C343A8400B27EC0 /* GameScene.sks in Resources */,
+				E7C0F7A71DD221F200F81522 /* Guardian.atlasc in Resources */,
+				E7C0F7BF1DD2407600F81522 /* Lurker.atlasc in Resources */,
 				E7CCA39E1C343A8400B27EC0 /* LaunchScreen.storyboard in Resources */,
+				E7C0F7B71DD23C9D00F81522 /* Mutalisk.atlasc in Resources */,
 				E7E1094C1D880B9800BB94BC /* Dark.atlasc in Resources */,
 				E7FB2D671DCFD7C2000427E7 /* Infestor.atlasc in Resources */,
 				E7FB2D6F1DCFE3F5000427E7 /* scourge.atlasc in Resources */,
+				E7C0F7C71DD244AA00F81522 /* Kerrigan.atlasc in Resources */,
 				E7960D221D81AD280018531B /* Storm.atlasc in Resources */,
+				E7C0F79F1DD21BD600F81522 /* Zergling.atlasc in Resources */,
 				E7E109401D874CB500BB94BC /* Cloud.atlasc in Resources */,
 				E7CCA39B1C343A8400B27EC0 /* Assets.xcassets in Resources */,
 				E7CCA3991C343A8400B27EC0 /* Main.storyboard in Resources */,
@@ -583,22 +674,35 @@
 				E7FB2D631DCF58D3000427E7 /* CivilianEnemy.swift in Sources */,
 				E7B448191CF61B0D00FA4342 /* RangeNode.swift in Sources */,
 				E7471F5B1CE67DCD004B22AC /* Tile.swift in Sources */,
+				E7C0F7B11DD22D4E00F81522 /* Defiler.swift in Sources */,
 				E7960D241D81AD380018531B /* Storm.swift in Sources */,
 				E7FB2D6B1DCFD7E7000427E7 /* InfestorEnemy.swift in Sources */,
+				E7C0F7A91DD221FC00F81522 /* Guardian.swift in Sources */,
 				E7E109421D874CBF00BB94BC /* Cloud.swift in Sources */,
+				E7C0F7CD1DD2451300F81522 /* KerriganLevel.swift in Sources */,
 				E73F79A31CE9FC47008CD865 /* ArchonTower.swift in Sources */,
 				E70498041D7F683C000F60E1 /* MixedLevel1.swift in Sources */,
+				E7C0F7C11DD2407F00F81522 /* Lurker.swift in Sources */,
 				E7CCA3941C343A8400B27EC0 /* GameScene.swift in Sources */,
 				E7B48E7B1CF38DF300F8C5EC /* CommandCenter.swift in Sources */,
+				E7C0F7BB1DD23CB300F81522 /* MutaliskEnemy.swift in Sources */,
 				E7FB2D6D1DCFD8D8000427E7 /* InfestorLevel.swift in Sources */,
+				E7C0F7C31DD2408D00F81522 /* LurkerEnemy.swift in Sources */,
+				E7C0F7A31DD21C2500F81522 /* ZerglingEnemy.swift in Sources */,
 				E7CCA3E41C348C0A00B27EC0 /* GrassMap.swift in Sources */,
 				E7CCA3961C343A8400B27EC0 /* GameViewController.swift in Sources */,
 				E71F5B701CF101E7004CE2F2 /* ZealotEnemy.swift in Sources */,
+				E7C0F79B1DD0DB8500F81522 /* UltraliskLevel.swift in Sources */,
 				E7E109501D880C1300BB94BC /* DarkTower.swift in Sources */,
+				E7C0F7C91DD244B300F81522 /* Kerrigan.swift in Sources */,
+				E7C0F7971DD0DA3D00F81522 /* Ultralisk.swift in Sources */,
 				E7E1093E1D874C8800BB94BC /* CloudBullet.swift in Sources */,
 				E7E1094A1D87E7A400BB94BC /* ZealotTower.swift in Sources */,
+				E7C0F7B51DD22E1C00F81522 /* DefilerLevel.swift in Sources */,
+				E7C0F7AB1DD2220C00F81522 /* GuardianEnemy.swift in Sources */,
 				E71F5B731CF120A3004CE2F2 /* ZealotsLevel.swift in Sources */,
 				E73F79A81CEA255F008CD865 /* Zealot.swift in Sources */,
+				E7C0F7BD1DD23D0E00F81522 /* MutaliskLevel.swift in Sources */,
 				E7FB2D751DCFE4C0000427E7 /* ScourgeLevel.swift in Sources */,
 				E7FB2D651DCF5A42000427E7 /* CivilianLevel.swift in Sources */,
 				E7B448221CF6455000FA4342 /* PlasmaBullet.swift in Sources */,
@@ -608,10 +712,12 @@
 				E7CCA3C61C3441D700B27EC0 /* BoardNode.swift in Sources */,
 				E70773E91CE7856600C9DC93 /* Board.swift in Sources */,
 				E7DCE9D91CEA4C34006F4BCA /* PortraitViewCell.swift in Sources */,
+				E7C0F7C51DD240D800F81522 /* LurkerLevel.swift in Sources */,
 				E7FB2D691DCFD7D7000427E7 /* Infestor.swift in Sources */,
 				E73F799F1CE9DAE9008CD865 /* Tower.swift in Sources */,
 				E7CCA3D91C3483DB00B27EC0 /* GameCoordinator.swift in Sources */,
 				E7E109561D883E3100BB94BC /* Utils.swift in Sources */,
+				E7C0F7CB1DD244BF00F81522 /* KerriganEnemy.swift in Sources */,
 				E7B448131CF5FECA00FA4342 /* EnemyNode.swift in Sources */,
 				E70498061D7F7F3D000F60E1 /* UIOutlinedLabel.swift in Sources */,
 				E7FB2D731DCFE414000427E7 /* ScourgeEnemy.swift in Sources */,
@@ -619,16 +725,22 @@
 				E7B448241CF6462100FA4342 /* Plasma.swift in Sources */,
 				E7CCA3D61C346DAD00B27EC0 /* DefaultTile.swift in Sources */,
 				E70497FE1D7E219F000F60E1 /* Hydra.swift in Sources */,
+				E7C0F7A11DD21BE300F81522 /* Zergling.swift in Sources */,
+				E7C0F79D1DD0F56500F81522 /* UltraliskEnemy.swift in Sources */,
+				E7C0F7AD1DD2227300F81522 /* GuardianLevel.swift in Sources */,
 				E7960D261D81AD460018531B /* StormBullet.swift in Sources */,
 				E7E1094E1D880BA700BB94BC /* Dark.swift in Sources */,
 				E7B448171CF61AE500FA4342 /* Range.swift in Sources */,
 				E73F79A11CE9E8C6008CD865 /* Scene.swift in Sources */,
 				E7CCA3DE1C34883900B27EC0 /* Enemy.swift in Sources */,
+				E7C0F7B31DD22D5E00F81522 /* DefilerEnemy.swift in Sources */,
 				E7FB2D711DCFE3FD000427E7 /* Scourge.swift in Sources */,
 				E7CCA3901C343A8400B27EC0 /* AppDelegate.swift in Sources */,
 				E7CCA3DB1C34875700B27EC0 /* Level.swift in Sources */,
 				E7E109541D880F7D00BB94BC /* BulletNodeShape.swift in Sources */,
+				E7C0F7B91DD23CA600F81522 /* Mutalisk.swift in Sources */,
 				E73F799D1CE9DA98008CD865 /* UIListener.swift in Sources */,
+				E7C0F7A51DD21C9300F81522 /* ZerglingLevel.swift in Sources */,
 				E7B4481D1CF63DBF00FA4342 /* BulletNode.swift in Sources */,
 				E7E109521D880D6100BB94BC /* MeleeAttack.swift in Sources */,
 				E7CCA3C21C343C5400B27EC0 /* MainViewController.swift in Sources */,

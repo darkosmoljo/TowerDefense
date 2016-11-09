@@ -18,7 +18,9 @@ public class GrassMap : Map {
     
     init() {
         
-        levels = [ScourgeLevel(), InfestorLevel(), CivilianLevel(), ZealotsLevel(), HydrasLevel(), MixedLevel1()]
+        levels = [KerriganLevel(), LurkerLevel(), MutaliskLevel(), DefilerLevel(), GuardianLevel(),
+                  ZerglingLevel(), UltraliskLevel(), ScourgeLevel(), InfestorLevel(), CivilianLevel(),
+                  ZealotsLevel(), HydrasLevel(), MixedLevel1()]
         
         towers = [ZealotTower(), TemplarTower(), ArchonTower(), DarkTower()]
         

@@ -27,7 +27,7 @@ class RangeNode: SKShapeNode, Range {
         
         super.init()
         
-        if let towerNode:SKNode = tower.getNode() {
+        if let _:SKNode = tower.getNode() {
             let diameter: Int = range * 2
             let point: CGPoint = CGPoint(x: -range, y: -range)
             self.path = CGPathCreateWithEllipseInRect(CGRect(origin: point, size: CGSize(width: diameter, height: diameter)), nil)
