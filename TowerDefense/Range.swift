@@ -12,7 +12,7 @@ import SpriteKit
 
 protocol Range {
     
-    func getRange() -> CGFloat
+    func getRange() -> Int
     func getNode() -> SKShapeNode
     func getTower() -> Tower
     

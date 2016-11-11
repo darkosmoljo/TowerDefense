@@ -154,6 +154,16 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
             shouldCheckForEnemies = false
             
             boardListener.allEnemiesDestroyed()
+            
+            enumerateChildNodesWithName("tower", usingBlock: {
+                node, stop in
+                
+                
+                if node is Tower {
+                    let tower: Tower = node as! Tower
+                    tower.reset()
+                }
+            })
         }
     }
     
@@ -187,7 +197,31 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
             addChild(tower.getNode())
             
             toggleStateSelected(selectedTile)
+            
+            resetGlobalTowers()
         }
+    }
+    
+    func resetGlobalTowers() {
+        
+        enumerateChildNodesWithName("tower", usingBlock: {
+            towerNode, stop in
+            
+            if let tower = towerNode as? Tower {
+                
+                if tower.getRange() == nil {
+                    
+                    self.enumerateChildNodesWithName("enemy", usingBlock: {
+                        enemyNode, stop in
+                        
+                        if let enemy = enemyNode as? Enemy {
+                            tower.didEnterRegion(enemy)
+                        }
+                    })
+                }
+            }
+        })
+        
     }
     
     func putEnemy(enemy: Enemy) {
@@ -205,6 +239,8 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
             enemy.startPath()
             
             shouldCheckForEnemies = true
+            
+            resetGlobalTowers()
         }
     }
     
@@ -213,10 +249,7 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
         enumerateChildNodesWithName("tower", usingBlock: {
             node, stop in
             
-            if node is Tower {
-                
-                let tower: Tower = node as! Tower
-                
+            if let tower = node as? Tower {
                 tower.didExitRegion(enemy)
             }
         })
@@ -259,26 +292,6 @@ public class BoardNode: SKSpriteNode, Board, TileListener, CommandCenterListener
     }
     
     public func didBeginContact(contact: SKPhysicsContact) {
-        
-//        if (contact.bodyB.categoryBitMask == BitMasks.commandCenter) {
-//            print("b: command center")
-//        }
-//        
-//        if (contact.bodyA.categoryBitMask == BitMasks.range) {
-//            print("a: range")
-//        }
-//        
-//        if (contact.bodyB.categoryBitMask == BitMasks.bullet) {
-//            print("b: bullet")
-//        }
-//        
-//        if (contact.bodyA.categoryBitMask == BitMasks.bullet) {
-//            print("a: bullet")
-//        }
-//        
-//        if (contact.bodyA.categoryBitMask == BitMasks.enemy) {
-//            print("a: enemy")
-//        }
         
         if (contact.bodyA.categoryBitMask == BitMasks.commandCenter &&
             contact.bodyB.categoryBitMask == BitMasks.enemy) {

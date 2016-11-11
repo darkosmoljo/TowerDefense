@@ -11,8 +11,9 @@ import Foundation
 class MixedLevel1: Level {
     
     func getEnemies() -> [Enemy] {
-        return [HydraEnemy(index: 0), ZealotEnemy(index: 1), HydraEnemy(index: 2), ZealotEnemy(index: 3), HydraEnemy(index: 4), ZealotEnemy(index: 5), HydraEnemy(index: 6), ZealotEnemy(index: 7), HydraEnemy(index: 8), ZealotEnemy(index: 9),
-                HydraEnemy(index: 10), ZealotEnemy(index: 11), HydraEnemy(index: 12), ZealotEnemy(index: 13), HydraEnemy(index: 14), ZealotEnemy(index: 15), HydraEnemy(index: 16), ZealotEnemy(index: 17), HydraEnemy(index: 18), ZealotEnemy(index: 19)]
+        return [ScourgeEnemy(index: 0), CivilianEnemy(index: 1), ZerglingEnemy(index: 2), ZerglingEnemy(index: 3), CivilianEnemy(index: 4),
+                ScourgeEnemy(index: 5), ZerglingEnemy(index: 6), CivilianEnemy(index: 7), ScourgeEnemy(index: 8), CivilianEnemy(index: 9),
+                CivilianEnemy(index: 10), ZerglingEnemy(index: 11), ZerglingEnemy(index: 12), CivilianEnemy(index: 13), ScourgeEnemy(index: 14)]
     }
     
     func getId() -> String{

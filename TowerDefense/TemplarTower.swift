@@ -15,7 +15,7 @@ class TemplarTower: TowerNode {
     let templar: Templar = Templar()
     
     override func getPrice() -> Int {
-        return 20
+        return 40
     }
     
     init() {
@@ -23,8 +23,6 @@ class TemplarTower: TowerNode {
         let texture: SKTexture = templar.templar_attack_down1()
         
         super.init(texture: texture, color: UIColor.clearColor(), size: texture.size())
-        
-        range = RangeNode(tower: self, range:120)
         
         cooldownDelay = 0.9
         

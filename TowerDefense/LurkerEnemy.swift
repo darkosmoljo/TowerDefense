@@ -26,6 +26,8 @@ class LurkerEnemy : EnemyNode {
         
         name = "enemy"
         id = lurker.LURKER_WALK_SIDE1 + "_\(index)"
+        
+        health = 450
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class LurkerEnemy : EnemyNode {
     }
     
     override func getSpeed() -> Int {
-        return 120
+        return 100
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {

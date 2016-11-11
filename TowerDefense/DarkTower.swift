@@ -15,7 +15,7 @@ class DarkTower: TowerNode {
     let dark: Dark = Dark()
     
     override func getPrice() -> Int {
-        return 40
+        return 70
     }
     
     init() {
@@ -48,7 +48,7 @@ class DarkTower: TowerNode {
     
     override func createBullet() -> Bullet {
         
-        let bullet: BulletNodeShape = MeleeAttack(bulletDamage: 50, bulletSpeed: 0)
+        let bullet: BulletNodeShape = MeleeAttack(bulletDamage: 40, bulletSpeed: 0)
         
         return bullet
     }

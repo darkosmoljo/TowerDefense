@@ -11,7 +11,8 @@ import Foundation
 class CivilianLevel : Level {
     
     func getEnemies() -> [Enemy] {
-        return [CivilianEnemy(index: 0), CivilianEnemy(index: 1), CivilianEnemy(index: 2), CivilianEnemy(index: 3), CivilianEnemy(index: 4)]
+        return [CivilianEnemy(index: 0), CivilianEnemy(index: 1), CivilianEnemy(index: 2), CivilianEnemy(index: 3), CivilianEnemy(index: 4),
+                CivilianEnemy(index: 5), CivilianEnemy(index: 6), CivilianEnemy(index: 7), CivilianEnemy(index: 8), CivilianEnemy(index: 9)]
     }
     
     func getId() -> String{
@@ -19,6 +20,6 @@ class CivilianLevel : Level {
     }
     
     func getDelay() -> Double {
-        return 0.4
+        return 0.3
     }
 }

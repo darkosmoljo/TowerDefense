@@ -26,6 +26,8 @@ class GuardianEnemy : EnemyNode {
         
         name = "enemy"
         id = guardian.GUARDIAN_WALK_SIDE1 + "_\(index)"
+        
+        health = 500
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class GuardianEnemy : EnemyNode {
     }
     
     override func getSpeed() -> Int {
-        return 120
+        return 130
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {

@@ -11,7 +11,9 @@ import Foundation
 class InfestorLevel : Level {
     
     func getEnemies() -> [Enemy] {
-        return [InfestorEnemy(index: 0), InfestorEnemy(index: 1), InfestorEnemy(index: 2), InfestorEnemy(index: 3), InfestorEnemy(index: 4)]
+        return [InfestorEnemy(index: 0), InfestorEnemy(index: 1), InfestorEnemy(index: 2), InfestorEnemy(index: 3), InfestorEnemy(index: 4),
+                InfestorEnemy(index: 5), InfestorEnemy(index: 6), InfestorEnemy(index: 7), InfestorEnemy(index: 8), InfestorEnemy(index: 9),
+                InfestorEnemy(index: 10), InfestorEnemy(index: 11), InfestorEnemy(index: 12), InfestorEnemy(index: 13), InfestorEnemy(index: 14)]
     }
     
     func getId() -> String{
@@ -19,6 +21,6 @@ class InfestorLevel : Level {
     }
     
     func getDelay() -> Double {
-        return 0.4
+        return 0.35
     }
 }

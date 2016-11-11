@@ -13,7 +13,6 @@ class HydraEnemy: EnemyNode {
     
     let hydra: Hydra
     
-    
     init(index: Int) {
         hydra = Hydra()
         
@@ -24,15 +23,11 @@ class HydraEnemy: EnemyNode {
         name = "enemy"
         id = hydra.HYDRA_WALK_SIDE1 + "_\(index)"
         
-        health = 160
+        health = 250
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func getSpeed() -> Int {
-        return 110
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture] {

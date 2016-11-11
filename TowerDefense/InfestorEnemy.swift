@@ -26,6 +26,8 @@ class InfestorEnemy : EnemyNode {
         
         name = "enemy"
         id = infestor.INFESTOR_WALK_SIDE1 + "_\(index)"
+        
+        health = 300
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class InfestorEnemy : EnemyNode {
     }
     
     override func getSpeed() -> Int {
-        return 120
+        return 125
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {

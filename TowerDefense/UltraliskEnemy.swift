@@ -26,6 +26,8 @@ class UltraliskEnemy : EnemyNode {
         
         name = "enemy"
         id = ultralisk.ULTRALISK_WALK_SIDE1 + "_\(index)"
+        
+        health = 1500
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class UltraliskEnemy : EnemyNode {
     }
     
     override func getSpeed() -> Int {
-        return 120
+        return 140
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {

@@ -25,6 +25,9 @@
 		E73F79A81CEA255F008CD865 /* Zealot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F79A71CEA255F008CD865 /* Zealot.swift */; };
 		E73F79AB1CEA4102008CD865 /* Archon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F79AA1CEA4102008CD865 /* Archon.swift */; };
 		E7471F5B1CE67DCD004B22AC /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7471F5A1CE67DCD004B22AC /* Tile.swift */; };
+		E74D84ED1DD4D9AB0065C158 /* MixedLevel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D84EC1DD4D9AB0065C158 /* MixedLevel2.swift */; };
+		E74D84EF1DD4E4560065C158 /* MixedLevel3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D84EE1DD4E4560065C158 /* MixedLevel3.swift */; };
+		E74D84F11DD60B430065C158 /* MixedLevel4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D84F01DD60B430065C158 /* MixedLevel4.swift */; };
 		E774C60C1CEA5F1B00FF3892 /* Archon.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E774C60A1CEA5F1B00FF3892 /* Archon.atlasc */; };
 		E774C60D1CEA5F1B00FF3892 /* Zealot.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E774C60B1CEA5F1B00FF3892 /* Zealot.atlasc */; };
 		E7960D221D81AD280018531B /* Storm.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = E7960D211D81AD280018531B /* Storm.atlasc */; };
@@ -150,6 +153,9 @@
 		E73F79A71CEA255F008CD865 /* Zealot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zealot.swift; sourceTree = "<group>"; };
 		E73F79AA1CEA4102008CD865 /* Archon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archon.swift; sourceTree = "<group>"; };
 		E7471F5A1CE67DCD004B22AC /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		E74D84EC1DD4D9AB0065C158 /* MixedLevel2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedLevel2.swift; sourceTree = "<group>"; };
+		E74D84EE1DD4E4560065C158 /* MixedLevel3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedLevel3.swift; sourceTree = "<group>"; };
+		E74D84F01DD60B430065C158 /* MixedLevel4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedLevel4.swift; sourceTree = "<group>"; };
 		E774C60A1CEA5F1B00FF3892 /* Archon.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Archon.atlasc; sourceTree = "<group>"; };
 		E774C60B1CEA5F1B00FF3892 /* Zealot.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Zealot.atlasc; sourceTree = "<group>"; };
 		E7960D211D81AD280018531B /* Storm.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Storm.atlasc; sourceTree = "<group>"; };
@@ -292,19 +298,22 @@
 		E71F5B711CF11FE8004CE2F2 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
+				E7FB2D641DCF5A42000427E7 /* CivilianLevel.swift */,
+				E7C0F7A41DD21C9300F81522 /* ZerglingLevel.swift */,
+				E7FB2D741DCFE4C0000427E7 /* ScourgeLevel.swift */,
+				E70498031D7F683C000F60E1 /* MixedLevel1.swift */,
 				E71F5B721CF120A3004CE2F2 /* ZealotsLevel.swift */,
 				E70497FF1D7E24C8000F60E1 /* HydrasLevel.swift */,
-				E70498031D7F683C000F60E1 /* MixedLevel1.swift */,
-				E7FB2D641DCF5A42000427E7 /* CivilianLevel.swift */,
-				E7FB2D6C1DCFD8D8000427E7 /* InfestorLevel.swift */,
-				E7FB2D741DCFE4C0000427E7 /* ScourgeLevel.swift */,
-				E7C0F79A1DD0DB8500F81522 /* UltraliskLevel.swift */,
-				E7C0F7A41DD21C9300F81522 /* ZerglingLevel.swift */,
-				E7C0F7AC1DD2227300F81522 /* GuardianLevel.swift */,
-				E7C0F7B41DD22E1C00F81522 /* DefilerLevel.swift */,
 				E7C0F7BC1DD23D0E00F81522 /* MutaliskLevel.swift */,
+				E74D84EC1DD4D9AB0065C158 /* MixedLevel2.swift */,
+				E7FB2D6C1DCFD8D8000427E7 /* InfestorLevel.swift */,
+				E7C0F7B41DD22E1C00F81522 /* DefilerLevel.swift */,
 				E7C0F7C41DD240D800F81522 /* LurkerLevel.swift */,
+				E74D84EE1DD4E4560065C158 /* MixedLevel3.swift */,
+				E7C0F7AC1DD2227300F81522 /* GuardianLevel.swift */,
+				E7C0F79A1DD0DB8500F81522 /* UltraliskLevel.swift */,
 				E7C0F7CC1DD2451300F81522 /* KerriganLevel.swift */,
+				E74D84F01DD60B430065C158 /* MixedLevel4.swift */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -671,6 +680,7 @@
 			files = (
 				E7CCA3E21C348B4100B27EC0 /* Map.swift in Sources */,
 				E7E109461D8765FF00BB94BC /* Templar.swift in Sources */,
+				E74D84EF1DD4E4560065C158 /* MixedLevel3.swift in Sources */,
 				E7FB2D631DCF58D3000427E7 /* CivilianEnemy.swift in Sources */,
 				E7B448191CF61B0D00FA4342 /* RangeNode.swift in Sources */,
 				E7471F5B1CE67DCD004B22AC /* Tile.swift in Sources */,
@@ -712,6 +722,7 @@
 				E7CCA3C61C3441D700B27EC0 /* BoardNode.swift in Sources */,
 				E70773E91CE7856600C9DC93 /* Board.swift in Sources */,
 				E7DCE9D91CEA4C34006F4BCA /* PortraitViewCell.swift in Sources */,
+				E74D84ED1DD4D9AB0065C158 /* MixedLevel2.swift in Sources */,
 				E7C0F7C51DD240D800F81522 /* LurkerLevel.swift in Sources */,
 				E7FB2D691DCFD7D7000427E7 /* Infestor.swift in Sources */,
 				E73F799F1CE9DAE9008CD865 /* Tower.swift in Sources */,
@@ -730,6 +741,7 @@
 				E7C0F7AD1DD2227300F81522 /* GuardianLevel.swift in Sources */,
 				E7960D261D81AD460018531B /* StormBullet.swift in Sources */,
 				E7E1094E1D880BA700BB94BC /* Dark.swift in Sources */,
+				E74D84F11DD60B430065C158 /* MixedLevel4.swift in Sources */,
 				E7B448171CF61AE500FA4342 /* Range.swift in Sources */,
 				E73F79A11CE9E8C6008CD865 /* Scene.swift in Sources */,
 				E7CCA3DE1C34883900B27EC0 /* Enemy.swift in Sources */,

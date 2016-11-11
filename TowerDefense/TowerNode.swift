@@ -64,11 +64,17 @@ class TowerNode: SKSpriteNode, Tower {
     }
     
     func didEnterRegion(enemy: Enemy)  {
-        enemiesInRange.append(enemy)
+        if enemy.getHealth() > 0 && enemyNotAppanded(enemy) {
+            enemiesInRange.append(enemy)
+        }
         
         if (enemiesInRange.count > 0) {
             showRange()
         }
+    }
+    
+    func enemyNotAppanded(enemy: Enemy) -> Bool {
+        return enemiesInRange.indexOf({return $0.getId() == enemy.getId()}) == nil
     }
     
     func didExitRegion(enemy: Enemy) {
@@ -79,6 +85,15 @@ class TowerNode: SKSpriteNode, Tower {
         if (enemiesInRange.count <= 0) {
             hideRange()
         }
+    }
+    
+    func reset() {
+        if bullet != nil {
+            bullet?.explode()
+        }
+        enemiesInRange.removeAll()
+        hideRange()
+        removeAllActions()
     }
     
     func recalibrate() -> Bullet? {
@@ -118,6 +133,7 @@ class TowerNode: SKSpriteNode, Tower {
     }
     
     func fire(enemy: Enemy) {
+        
         bullet?.setTower(self)
         bullet?.setTarget(enemy)
         bullet?.fire()

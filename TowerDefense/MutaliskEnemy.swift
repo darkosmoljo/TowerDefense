@@ -26,6 +26,8 @@ class MutaliskEnemy : EnemyNode {
         
         name = "enemy"
         id = mutalisk.MUTALISK_WALK_SIDE1 + "_\(index)"
+        
+        health = 220
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class MutaliskEnemy : EnemyNode {
     }
     
     override func getSpeed() -> Int {
-        return 120
+        return 170
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {

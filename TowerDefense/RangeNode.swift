@@ -13,8 +13,8 @@ class RangeNode: SKShapeNode, Range {
     
     var tower: Tower
     
-    func getRange() -> CGFloat {
-        return frame.width
+    func getRange() -> Int {
+        return Int(frame.width)
     }
     
     func getNode() -> SKShapeNode {
@@ -28,14 +28,16 @@ class RangeNode: SKShapeNode, Range {
         super.init()
         
         if let _:SKNode = tower.getNode() {
-            let diameter: Int = range * 2
-            let point: CGPoint = CGPoint(x: -range, y: -range)
-            self.path = CGPathCreateWithEllipseInRect(CGRect(origin: point, size: CGSize(width: diameter, height: diameter)), nil)
-            fillColor = UIColor.darkGrayColor()
-            strokeColor = UIColor.blackColor()
-            alpha = 0
-            
-            setupPhysicsBody()
+            if (range > 0) {
+                let diameter: Int = range * 2
+                let point: CGPoint = CGPoint(x: -range, y: -range)
+                self.path = CGPathCreateWithEllipseInRect(CGRect(origin: point, size: CGSize(width: diameter, height: diameter)), nil)
+                fillColor = UIColor.darkGrayColor()
+                strokeColor = UIColor.blackColor()
+                alpha = 0
+                
+                setupPhysicsBody()
+            }
         }
     }
     

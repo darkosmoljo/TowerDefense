@@ -26,6 +26,8 @@ class ZealotEnemy: EnemyNode {
         
         name = "enemy"
         id = zealot.ZEALOT_ATTACK_DOWN_RIGHT1 + "_\(index)"
+        
+        health = 220
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class ZealotEnemy: EnemyNode {
     }
     
     override func getSpeed() -> Int {
-        return 120
+        return 110
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {

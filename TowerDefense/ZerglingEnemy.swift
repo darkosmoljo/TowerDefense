@@ -26,6 +26,8 @@ class ZerglingEnemy: EnemyNode {
         
         name = "enemy"
         id = zergling.ZERGLING_WALK_SIDE1 + "_\(index)"
+        
+        health = 90
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class ZerglingEnemy: EnemyNode {
     }
     
     override func getSpeed() -> Int {
-        return 120
+        return 170
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {

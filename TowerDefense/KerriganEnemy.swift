@@ -26,6 +26,8 @@ class KerriganEnemy: EnemyNode {
         
         name = "enemy"
         id = kerrigan.KERRIGAN_WALK_SIDE1 + "_\(index)"
+        
+        health = 2000
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class KerriganEnemy: EnemyNode {
     }
     
     override func getSpeed() -> Int {
-        return 120
+        return 150
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {

@@ -32,10 +32,6 @@ class CivilianEnemy : EnemyNode {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func getSpeed() -> Int {
-        return 120
-    }
-    
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {
         
         var anim: [SKTexture] = civilian.civilian_walk_side()

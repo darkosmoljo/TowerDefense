@@ -28,4 +28,6 @@ protocol Tower {
     func setBullet(bullet: Bullet?)
     
     func getPrice() -> Int
+    
+    func reset()
 }

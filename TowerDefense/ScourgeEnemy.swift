@@ -26,6 +26,8 @@ class ScourgeEnemy : EnemyNode {
         
         name = "enemy"
         id = scourge.SCOURGE_WALK_SIDE1 + "_\(index)"
+        
+        health = 110
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class ScourgeEnemy : EnemyNode {
     }
     
     override func getSpeed() -> Int {
-        return 120
+        return 140
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {

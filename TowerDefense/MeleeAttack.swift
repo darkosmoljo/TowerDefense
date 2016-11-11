@@ -44,7 +44,7 @@ class MeleeAttack: BulletNodeShape {
         if (exploading == false) {
             exploading = true
             
-            Utils.delay(0.8, closure: {
+            Utils.delay(1.0, closure: {
                 super.explode()
             })
         }

@@ -26,6 +26,8 @@ class DefilerEnemy : EnemyNode {
         
         name = "enemy"
         id = defiler.DEFILER_WALK_SIDE1 + "_\(index)"
+        
+        health = 380
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,7 +35,7 @@ class DefilerEnemy : EnemyNode {
     }
     
     override func getSpeed() -> Int {
-        return 120
+        return 140
     }
     
     override func getAnimation(currentLocation: CGPoint, nextPoint: CGPoint) -> [SKTexture]? {
